@@ -1,0 +1,90 @@
+
+@import "tailwindcss";
+
+:root {
+  /* ELESSY brand colors */
+  --brand: 14 74 54;
+  --brand-mid: 46 125 91;
+  --brand-deep: 10 53 39;
+  --signal: 232 163 23;
+  --ink: 20 32 29;
+  --steel: 91 107 102;
+  --sage: 169 196 182;
+  --mist: 237 241 238;
+  --site: 244 246 243;
+  --line: 217 224 219;
+}
+
+@theme inline {
+  /* Brand colors */
+  --color-brand: rgb(var(--brand));
+  --color-brand-mid: rgb(var(--brand-mid));
+  --color-brand-deep: rgb(var(--brand-deep));
+  --color-signal: rgb(var(--signal));
+  --color-ink: rgb(var(--ink));
+  --color-steel: rgb(var(--steel));
+  --color-sage: rgb(var(--sage));
+  --color-mist: rgb(var(--mist));
+  --color-site: rgb(var(--site));
+  --color-line: rgb(var(--line));
+
+  /* Fonts defined in app/layout.tsx */
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+
+  /* Layout */
+  --container-page: 1440px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-site font-sans text-base text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-bold text-ink;
+  }
+
+  :focus-visible {
+    outline: 3px solid rgb(var(--signal));
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: rgb(var(--signal) / 0.45);
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full px-5 md:px-10;
+    max-width: 1440px;
+  }
+
+  .section-y {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .eyebrow {
+    @apply font-display text-[12px] font-bold uppercase tracking-[0.22em] text-brand-mid;
+  }
+
+  .field {
+    @apply min-h-[52px] w-full rounded-[4px] border border-line bg-white px-4 text-[16px] text-ink placeholder:text-steel/80 transition-colors focus:border-brand disabled:opacity-60;
+  }
+}
