@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { executives } from "@/lib/team";
-import { cn } from "@/lib/utils";
 
 const GAP = 24; // matches gap-6
 
@@ -70,26 +69,27 @@ export function TeamCarousel() {
               key={e.slug}
               className="shrink-0 basis-[72%] snap-start sm:basis-[44%] md:basis-[calc((100%-48px)/3)] lg:basis-[calc((100%-96px)/5)]"
             >
-              <Link href={`/our-team/${e.slug}`} className="group block">
-                <div className="relative aspect-[4/5] overflow-hidden bg-brand">
+              <Link href={`/our-team/${e.slug}`} className="group block text-center">
+                {/* Circular photo */}
+                <div className="relative mx-auto aspect-square w-full max-w-[240px] overflow-hidden rounded-full bg-brand ring-4 ring-transparent ring-offset-4 ring-offset-site transition-all duration-300 group-hover:ring-signal">
                   {e.photo ? (
                     <Image
                       src={e.photo}
                       alt={`${e.name}, ${e.role}`}
                       fill
-                      sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, 72vw"
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
+                      sizes="(min-width: 1024px) 240px, (min-width: 768px) 33vw, 72vw"
+                      className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.06]"
                     />
                   ) : (
-                    <span aria-hidden className="absolute inset-0 flex items-center justify-center font-display text-6xl font-extrabold text-sage">
+                    <span aria-hidden className="absolute inset-0 flex items-center justify-center font-display text-5xl font-extrabold text-sage">
                       {initials(e.name)}
                     </span>
                   )}
-                  <span aria-hidden className="absolute bottom-0 left-0 h-1 w-0 bg-signal transition-all duration-300 group-hover:w-full" />
                 </div>
-                <h2 className="mt-4 font-display text-[19px] font-bold group-hover:text-brand">{e.name}</h2>
+
+                <h2 className="mt-6 font-display text-[19px] font-bold group-hover:text-brand">{e.name}</h2>
                 <p className="mt-1 text-[15px] text-steel">{e.role}</p>
-                <span className={cn("mt-3 inline-flex min-h-[44px] items-center gap-2 font-display text-[14px] font-bold text-brand")}>
+                <span className="mt-3 inline-flex min-h-[44px] items-center justify-center gap-2 font-display text-[14px] font-bold text-brand">
                   View profile <ArrowRight aria-hidden className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>

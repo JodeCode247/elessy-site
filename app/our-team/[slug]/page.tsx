@@ -38,7 +38,7 @@ export default async function ProfilePage({ params }: Props) {
           </Link>
 
           <div className="mt-8 grid gap-10 lg:grid-cols-[5fr_7fr] lg:gap-20">
-            <div className="relative aspect-[4/5] max-w-md overflow-hidden bg-brand lg:max-w-none">
+            <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full bg-brand lg:max-w-none">
               {e.photo ? (
                 <Image src={e.photo} alt={`${e.name}, ${e.role}`} fill priority sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover object-top" />
               ) : (
