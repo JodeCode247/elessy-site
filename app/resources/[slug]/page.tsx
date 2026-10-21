@@ -6,19 +6,21 @@ import { ArrowLeft } from "lucide-react";
 import { EnquiryBand } from "@/components/sections/EnquiryBand";
 import { articles } from "@/lib/content";
 
-type Props = { params: { slug: string } };
+type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const a = articles.find((x) => x.slug === params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const a = articles.find((x) => x.slug === slug);
   return a ? { title: a.title, description: a.excerpt } : {};
 }
 
-export default function ArticlePage({ params }: Props) {
-  const a = articles.find((x) => x.slug === params.slug);
+export default async function ArticlePage({ params }: Props) {
+  const { slug } = await params;
+  const a = articles.find((x) => x.slug === slug);
   if (!a) notFound();
   return (
     <>
