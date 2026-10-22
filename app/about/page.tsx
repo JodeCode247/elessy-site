@@ -17,25 +17,57 @@ export default function AboutPage() {
       <PageHeader eyebrow="About ELESSY" title="Engineering and construction across Nigeria since 1983." />
 
       <section aria-labelledby="story" className="section-y">
-        <div className="container-page grid items-start gap-12 lg:grid-cols-[6fr_5fr] lg:gap-20">
+        <div className="container-page grid items-center gap-12 lg:grid-cols-[6fr_5fr] lg:gap-20">
           <Reveal>
             <p className="eyebrow">Our story</p>
-            <h2 id="story" className="mt-4 max-w-[20ch] text-h2">Built by engineers and managers, growing in strength.</h2>
+
+            <h2
+              id="story"
+              className="mt-4 max-w-[20ch] text-h2"
+            >
+              Built by engineers and managers, growing in strength.
+            </h2>
+
             <div className="mt-8 space-y-5 text-[17px] leading-[1.75] text-steel">
-              <p>ELESSY Nigeria Limited was registered with the {company.regBody} as a limited liability company in {company.founded} (Registration No. {company.regNo}). It began with an associate team of experts with both engineering and management backgrounds, and has been growing in strength ever since.</p>
-              <p>Our experience spans building, electrical, mechanical and civil engineering. The company was set up to import, sell, construct and install engineering devices.</p>
-              <p>As the Nigerian economy has changed, so has ELESSY. We have diversified into services, industry and power, and into boreholes, potable and drinking water treatment plants, sewage plants, solar energy and agro-allied services. With new energy innovation, we have invested in solar services to complement the federal government&apos;s efforts to revive the energy sector.</p>
+              <p>
+                ELESSY Nigeria Limited was registered with the {company.regBody} as
+                a limited liability company in {company.founded} (Registration No.{" "}
+                {company.regNo}). It began with an associate team of experts with
+                both engineering and management backgrounds, and has been growing
+                in strength ever since.
+              </p>
+
+              <p>
+                Our experience spans building, electrical, mechanical and civil
+                engineering. The company was set up to import, sell, construct
+                and install engineering devices.
+              </p>
+
+              <p>
+                As the Nigerian economy has changed, so has ELESSY. We have
+                diversified into services, industry and power, and into boreholes,
+                potable and drinking water treatment plants, sewage plants, solar
+                energy and agro-allied services. With new energy innovation, we
+                have invested in solar services to complement the federal
+                government&apos;s efforts to revive the energy sector.
+              </p>
             </div>
           </Reveal>
-          <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden bg-brand-deep">
-              <Image src="/images/plan.jpg" alt="Building elevation drawn on a blueprint grid" fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover object-[40%_50%]" />
+
+          <Reveal delay={0.1}>
+            <div className="flex min-h-[320px] items-center justify-center bg-white p-8 md:min-h-[420px] md:p-12">
+              <div className="relative aspect-square w-full max-w-[320px]">
+                <Image
+                  src="/images/elessy-logo.png"
+                  alt="ELESSY Nigeria Limited company logo"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 30vw, 80vw"
+                  className="object-contain"
+                />
+              </div>
             </div>
-            <div className="absolute -bottom-6 left-4 bg-signal px-5 py-4 text-ink md:-left-8">
-              <p className="font-display text-5xl font-extrabold leading-none">{company.founded}</p>
-              <p className="mt-1 text-[13px] font-semibold">Year of registration</p>
-            </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
