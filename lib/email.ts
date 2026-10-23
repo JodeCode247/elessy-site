@@ -71,7 +71,7 @@ export async function notifyTeam(d: EnquiryInput): Promise<boolean> {
   const to = process.env.ENQUIRY_TO_EMAIL;
   if (!to) return false;
   const text = [
-    "New website enquiry",
+    "NEW CLIENT ENQUIRY",
     "",
     `Name: ${d.name}`,
     `Phone: ${d.phone}`,

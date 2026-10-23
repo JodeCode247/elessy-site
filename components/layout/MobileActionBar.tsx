@@ -9,7 +9,7 @@ export function MobileActionBar() {
     <nav aria-label="Quick actions" className="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-brand pb-[env(safe-area-inset-bottom)] text-white lg:hidden">
       <div className="flex">
         <a href={site.phoneHref} className={item}><Phone aria-hidden className="h-5 w-5" />Call</a>
-        <a href={site.whatsappHref} target="_blank" rel="noopener noreferrer" className={item}><MessageCircle aria-hidden className="h-5 w-5" />WhatsApp</a>
+        <a href={`${site.whatsappHref}?text=${encodeURIComponent(site.client_message)}`} target="_blank" rel="noopener noreferrer" className={item}><MessageCircle aria-hidden className="h-5 w-5" />WhatsApp</a>
         <Link href="/contact" className={`${item} text-signal`}><MousePointerClick aria-hidden className="h-5 w-5" />Enquire</Link>
       </div>
     </nav>

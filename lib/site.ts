@@ -20,6 +20,7 @@ export const site = {
   address2: "No. 5, Assembly Road Maplewood Estate, Oko-Oba,Agege, Lagos State",
   address3: "Suite 1&3 Elessy Office Complex,No. 51, Okene-Kabba Road,Opp. Civil Defence Office,Lokoja, Kogi State.",
   hours: "Monday to Friday, 8:00 to 17:00",
+  client_message: "Hello ELESSY, I am interested in your engineering and construction services. Please provide more information."
 } as const;
 
 export const nav = [

@@ -104,9 +104,7 @@ export function EnquiryForm({ defaultService, defaultProduct }: { defaultService
       <Button type="submit" disabled={busy} className="mt-8 w-full min-h-[58px] text-[18px]">
         {busy ? (<><Loader2 aria-hidden className="h-5 w-5 animate-spin" />Sending&hellip;</>) : "Send enquiry"}
       </Button>
-      <a href={`${site.whatsappHref}?text=${encodeURIComponent(
-          "Hello ELESSY, I am interested in your engineering and construction services. Please provide more information."
-        )}`} target="_blank" rel="noopener noreferrer" className="mt-5 flex min-h-[44px] items-center justify-center gap-2 font-display text-[15px] font-bold text-brand hover:underline">
+      <a href={`${site.whatsappHref}?text=${encodeURIComponent(site.client_message)}`} target="_blank" rel="noopener noreferrer" className="mt-5 flex min-h-[44px] items-center justify-center gap-2 font-display text-[15px] font-bold text-brand hover:underline">
         <MessageCircle aria-hidden className="h-5 w-5" />Prefer WhatsApp? Message us directly
       </a>
     </form>
