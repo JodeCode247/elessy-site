@@ -9,7 +9,7 @@ export const site = {
   tagline: "Engineering the foundations Nigeria builds on.",
   description:
     "ELESSY Nigeria Limited delivers architecture, engineering consultancy, building construction, electrical, solar, borehole and telecom installation across Nigeria.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://elessy.com.ng",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://elessyng.com.ng",
   phone: "+234 803 315 4332",
   phone2: "+234 818 692 0365",
   phone3: "+234 803 254 4994",
