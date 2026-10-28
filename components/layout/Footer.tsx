@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { nav, site } from "@/lib/site";
@@ -7,11 +8,28 @@ import { CompanyMap } from "@/components/ui/CompanyMap";
 export function Footer() {
   return (
     <footer className="bg-brand text-white">
+      
       <div className="container-page grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:py-20">
-        <div>
-          <Logo tone="light" />
-          <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-white/80">{site.tagline} </p>   
+                <div className="flex flex-col items-start">
+          {/* Company logo picture above the company name */}
+          <div className="mb-4 inline-flex rounded-md bg-white p-2">
+            <Image
+              src="/images/elessy-logo.png"
+              alt="ELESSY company logo"
+              width={150}
+              height={100}
+              className="h-auto w-36 object-contain"
+            />
           </div>
+
+          {/* Company name underneath the picture */}
+          <Logo tone="light" />
+
+          {/* Company tagline */}
+          <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-white/80">
+            {site.tagline}
+          </p>
+        </div>
         <FooterCol title="Services">
           {services.slice(0, 5).map((s) => (
             <FooterLink key={s.slug} href={`/services#${s.slug}`}>{s.name}</FooterLink>

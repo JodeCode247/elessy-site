@@ -13,14 +13,22 @@ export function Logo({ tone = "dark", className }: LogoProps) {
       aria-label="ELESSY Nigeria Limited home"
       className={cn("inline-flex shrink-0 items-center", className)}
     >
-      <span
-        className={cn(
-          "font-display text-[22px] font-bold leading-none tracking-[-0.045em] sm:text-[26px]",
-          tone === "dark" ? "text-brand" : "text-white"
-        )}
-      >
-        Elessy
-        <span className="ml-1.5 text-[11px] font-medium tracking-[0.04em] sm:text-[12px]">
+      <span className="flex flex-col">
+        <span
+          className={cn(
+            "font-display text-[22px] font-bold leading-none tracking-[-0.045em] sm:text-[26px]",
+            tone === "dark" ? "text-brand" : "text-white"
+          )}
+        >
+          Elessy
+        </span>
+
+        <span
+          className={cn(
+            "mt-1 text-[9px] font-semibold leading-tight tracking-[0.12em] sm:text-[10px]",
+            tone === "dark" ? "text-brand" : "text-white"
+          )}
+        >
           Nigeria Limited
         </span>
       </span>
