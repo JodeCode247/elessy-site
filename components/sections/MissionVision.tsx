@@ -9,18 +9,20 @@ const pillars = [
 ] as const;
 
 function Honeycomb({ className }: { className?: string }) {
+  const points: [number, number][] = [
+    [60, 60],
+    [140, 60],
+    [100, 130],
+  ];
+
   return (
     <svg
-      aria-hidden
+      aria-hidden="true"
       viewBox="0 0 200 200"
       fill="none"
       className={className}
     >
-      {[
-        [60, 60],
-        [140, 60],
-        [100, 130],
-      ].map(([x, y]) => (
+      {points.map(([x, y]) => (
         <polygon
           key={`${x}-${y}`}
           points={`${x},${y - 46} ${x + 40},${y - 23} ${x + 40},${y + 23} ${x},${y + 46} ${x - 40},${y + 23} ${x - 40},${y - 23}`}

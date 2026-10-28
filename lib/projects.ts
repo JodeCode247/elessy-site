@@ -1,7 +1,7 @@
 export type ProjectImage = { src: string; alt: string };
 
 export type Project = {
-  id: Number | null;         // used in the URL: /projects/<slug>
+  id?: string | number;         // used in the URL: /projects/<slug>
   name: string;
   slug: string;
   location: string;
@@ -686,7 +686,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: null,
+    id: 97,
     name: "Construction & installation of Street Light Along Lokoja-Ganaja Road",
     slug: "construction-and-installation-of-street-light-along-lokoja-ganaja-road",
     location: "Lokoja Kogi State",
@@ -1054,7 +1054,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: null,
+    id: 123,
     name: "Of Small Lecture Theatre Hall",
     slug: "of-small-lecture-theatre-hall",
     location: "Permanent Site Ilorin, Kwara State",

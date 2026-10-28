@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, Inter } from "next/font/google";
+import { Archivo,DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -24,7 +24,6 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
-import { DM_Serif_Display, Inter } from "next/font/google";
 
 const displayFont = DM_Serif_Display({
   variable: "--font-display",

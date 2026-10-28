@@ -106,7 +106,7 @@ export function ProjectsGrid() {
           >
             {visibleProjects.map((project, index) => (
               <li
-                key={project.id ?? `${project.name}-${index}`}
+                key={String(project.slug ?? `${project.name}-${index}`)}
                 className="min-w-0"
               >
                 <Link

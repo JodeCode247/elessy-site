@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const p = projects.find((x) => x.slug === slug);
-  return p ? { title: p.name, description: p.summary } : {};
+  return p ? { title: p.name, } : {};
 }
 
 export default async function ProjectPage({ params }: Props) {
@@ -30,7 +30,7 @@ export default async function ProjectPage({ params }: Props) {
   const facts = [
     { label: "Location", value: p.location },
     { label: "Service", value: p.category },
-    p.year ? { label: "Year", value: p.year } : null,
+    p.date ? { label: "Year", value: p.date } : null,
     p.client ? { label: "Client", value: p.client } : null,
   ].filter((f): f is { label: string; value: string } => f !== null);
 
@@ -60,10 +60,10 @@ export default async function ProjectPage({ params }: Props) {
               ))}
             </dl>
             <div className="space-y-5">
-              <p className="max-w-prose text-lead font-semibold text-ink">{p.summary}</p>
+              {/* <p className="max-w-prose text-lead font-semibold text-ink">{p.summary}</p>
               {p.description.map((para) => (
                 <p key={para.slice(0, 30)} className="max-w-prose text-[17px] leading-[1.75] text-steel">{para}</p>
-              ))}
+              ))} */}
               <Button href={`/contact?service=${encodeURIComponent(p.category)}`} className="mt-4">Start a similar project</Button>
             </div>
           </div>
