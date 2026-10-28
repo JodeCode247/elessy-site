@@ -59,11 +59,7 @@ export const articles: Article[] = [
   { slug: "telecom-site-basics", tag: "Telecom", title: "Telecom site basics: power, towers and equipment", excerpt: "The three things every telecom site depends on.", readTime: "5 min read", image: "/images/hero-telecom.jpg", alt: "Telecom tower and antennas", body: ["A telecom site has three dependencies: a structure to carry the antennas, the radio and transmission equipment, and reliable power.", "Power is often the weak point. Plan for grid, backup and monitoring together so equipment stays online.", "Commissioning and handover documentation make future maintenance and upgrades far simpler."] },
 ];
 
-export const company = {
-  founded: 1983,
-  regNo: "54796",
-  regBody: "Corporate Affairs Commission",
-} as const;
+export const company = { founded: 1983, regNo: "54796", regBody: "Corporate Affairs Commission", jobsCompleted: 125 } as const;
 
 // Full list of what the company offers (used on the About page)
 export const companyServices = [

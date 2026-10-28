@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { nav, site } from "@/lib/site";
 import { services } from "@/lib/content";
+import { CompanyMap } from "@/components/ui/CompanyMap";
 
 export function Footer() {
   return (
@@ -9,8 +10,8 @@ export function Footer() {
       <div className="container-page grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:py-20">
         <div>
           <Logo tone="light" />
-          <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-white/80">{site.tagline} Architecture, construction and installation across Nigeria.</p>
-        </div>
+          <p className="mt-5 max-w-xs text-[15px] leading-relaxed text-white/80">{site.tagline} </p>   
+          </div>
         <FooterCol title="Services">
           {services.slice(0, 5).map((s) => (
             <FooterLink key={s.slug} href={`/services#${s.slug}`}>{s.name}</FooterLink>
@@ -22,15 +23,27 @@ export function Footer() {
           ))}
         </FooterCol>
         <FooterCol title="Contact">
-          <FooterLink href={site.phoneHref}>{site.phone}</FooterLink>
           <FooterLink href={`mailto:${site.email}`}>{site.email}</FooterLink>
+          <FooterLink href={`mailto:${site.email}`}>{site.email2}</FooterLink>
+          <FooterLink href={site.phoneHref}>{site.phone}</FooterLink>
+          <FooterLink href={site.phoneHref}>{site.phone2}</FooterLink>
+          <FooterLink href={site.phoneHref}>{site.phone3}</FooterLink>
+          
 
-          <h1><li className="py-2 text-[15px] text-white/80">ABUJA</li></h1>
-          <li className="py-2 text-[15px] text-white/80">{site.address}</li>
-          <h1><li className="py-2 text-[15px] text-white/80">LAGOS</li></h1>
-          <li className="py-2 text-[15px] text-white/80">{site.address2}</li>
-          <h1><li className="py-2 text-[15px] text-white/80">LOKOJA</li></h1>
-          <li className="py-2 text-[15px] text-white/80">{site.address3}</li>
+          <CompanyMap
+            city="ABUJA"
+            address={site.address}
+            />
+
+          <CompanyMap
+            city="LAGOS"
+            address={site.address2}
+          />
+
+          <CompanyMap
+            city="LOKOJA"
+            address={site.address3}
+          />
         </FooterCol>
 
       </div>

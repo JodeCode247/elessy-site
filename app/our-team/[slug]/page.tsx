@@ -10,7 +10,6 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-
 export function generateStaticParams() {
   return executives.map((e) => ({ slug: e.slug }));
 }
@@ -18,74 +17,189 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const e = executives.find((x) => x.slug === slug);
-  return e ? { title: `${e.name}, ${e.role}`, description: e.bio[0] } : {};
+
+  return e
+    ? {
+        title: `${e.name}, ${e.role}`,
+        description: e.bio[0],
+      }
+    : {};
 }
 
 export default async function ProfilePage({ params }: Props) {
   const { slug } = await params;
-  const i = executives.findIndex((x) => x.slug === slug);
-  const e = executives[i];
+  const index = executives.findIndex((x) => x.slug === slug);
+  const e = executives[index];
+
   if (!e) notFound();
-  const next = executives[(i + 1) % executives.length];
-  const initials = e.name.split(" ").slice(0, 2).map((p) => p[0]?.toUpperCase()).join("");
+
+  const next = executives[(index + 1) % executives.length];
+  const initials = e.name
+    .split(" ")
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase())
+    .join("");
 
   return (
     <>
-      <article className="pt-[calc(72px+2.5rem)] pb-16 lg:pt-[calc(84px+4rem)] lg:pb-24">
+      <main className="bg-white pt-[calc(72px+2rem)] pb-16 lg:pt-[calc(84px+3rem)] lg:pb-24">
         <div className="container-page">
-          <Link href="/our-team" className="inline-flex min-h-[44px] items-center gap-2 text-[15px] font-semibold text-brand hover:underline">
-            <ArrowLeft aria-hidden className="h-4 w-4" /> All executives
+          <Link
+            href="/our-team"
+            className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-steel transition-colors hover:text-brand"
+          >
+            <ArrowLeft aria-hidden className="h-4 w-4" />
+            All executives
           </Link>
 
-          <div className="mt-8 grid gap-10 lg:grid-cols-[5fr_7fr] lg:gap-20">
-            <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full bg-brand lg:max-w-none">
-              {e.photo ? (
-                <Image src={e.photo} alt={`${e.name}, ${e.role}`} fill priority sizes="(min-width: 1024px) 40vw, 90vw" className="object-cover object-top" />
-              ) : (
-                <span aria-hidden className="absolute inset-0 flex items-center justify-center font-display text-8xl font-extrabold text-sage">{initials}</span>
-              )}
+          <div className="mt-8 grid items-start gap-9 md:mt-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16 xl:gap-20">
+            {/* Executive portrait */}
+            <div className="w-full max-w-lg">
+              <div className="relative aspect-[4/5] overflow-hidden bg-mist">
+                {e.photo ? (
+                  <Image
+                    src={e.photo}
+                    alt={`${e.name}, ${e.role}`}
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 42vw, 100vw"
+                    className="object-cover object-top"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center bg-mist">
+                    <span
+                      aria-hidden
+                      className="font-display text-6xl font-bold text-brand"
+                    >
+                      {initials}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+              <div className="mt-3 h-1 w-16 bg-brand" />
             </div>
 
-            <div>
+            {/* Executive information */}
+            <div className="pt-1 lg:pt-4">
               <p className="eyebrow">{e.role}</p>
-              <h1 className="mt-3 text-h1">{e.name}</h1>
 
-              <div className="mt-8 space-y-5">
-                {e.bio.map((p) => (
-                  <p key={p.slice(0, 30)} className="max-w-prose text-[18px] leading-[1.75] text-ink/90">{p}</p>
+              <h1 className="mt-3 max-w-2xl font-display text-3xl font-bold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl">
+                {e.name}
+              </h1>
+
+              <div className="mt-7 space-y-5">
+                {e.bio.map((paragraph, i) => (
+                  <p
+                    key={`${i}-${paragraph.slice(0, 20)}`}
+                    className="max-w-2xl text-base leading-8 text-steel sm:text-[17px]"
+                  >
+                    {paragraph}
+                  </p>
                 ))}
               </div>
-                
+
               {e.highlights && e.highlights.length > 0 && (
-                <ul className="mt-8 space-y-3 border-t border-line pt-8">
-                  <h3>Qualification:</h3>
-                  {e.highlights.map((h) => (
-                    <li key={h} className="flex gap-3 text-[16px]">
-                      <Check aria-hidden className="mt-1 h-4 w-4 shrink-0 text-brand" /> {h}
-                    </li>
-                  ))}
-                </ul>
+                <section className="mt-9 border-t border-line pt-6">
+                  <h2 className="font-display text-lg font-bold text-ink">
+                    Qualifications and experience
+                  </h2>
+
+                  <ul className="mt-4 space-y-3">
+                    {e.highlights.map((highlight) => (
+                      <li
+                        key={highlight}
+                        className="flex items-start gap-3 text-[15px] leading-7 text-steel"
+                      >
+                        <Check
+                          aria-hidden
+                          className="mt-1.5 h-4 w-4 shrink-0 text-brand"
+                        />
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
               )}
 
-              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-display text-[15px] font-bold text-brand">
-                {e.email && <a href={`mailto:${e.email}`} className="inline-flex min-h-[44px] items-center gap-2 hover:underline"><Mail aria-hidden className="h-4 w-4" />{e.email}</a>}
-                {e.phone && <a href={`tel:${e.phone.replace(/\s/g, "")}`} className="inline-flex min-h-[44px] items-center gap-2 hover:underline"><Phone aria-hidden className="h-4 w-4" />{e.phone}</a>}
-                {e.linkedin && <a href={e.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[44px] items-center gap-2 hover:underline"><Linkedin aria-hidden className="h-4 w-4" />LinkedIn</a>}
-              </div>
+              {/* Contact links */}
+              {(e.email || e.phone || e.linkedin) && (
+                <div className="mt-9 flex flex-col items-start gap-3 border-t border-line pt-6">
+                  <h2 className="font-display text-sm font-bold uppercase tracking-wider text-ink">
+                    Contact
+                  </h2>
 
+                  {e.email && (
+                    <a
+                      href={`mailto:${e.email}`}
+                      className="inline-flex min-h-10 items-center gap-3 text-sm text-steel transition-colors hover:text-brand"
+                    >
+                      <Mail
+                        aria-hidden
+                        className="h-4 w-4 shrink-0 text-brand"
+                      />
+                      <span className="break-all">{e.email}</span>
+                    </a>
+                  )}
+
+                  {e.phone && (
+                    <a
+                      href={`tel:${e.phone.replace(/\s/g, "")}`}
+                      className="inline-flex min-h-10 items-center gap-3 text-sm text-steel transition-colors hover:text-brand"
+                    >
+                      <Phone
+                        aria-hidden
+                        className="h-4 w-4 shrink-0 text-brand"
+                      />
+                      {e.phone}
+                    </a>
+                  )}
+
+                  {e.linkedin && (
+                    <a
+                      href={e.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex min-h-10 items-center gap-3 text-sm text-steel transition-colors hover:text-brand"
+                    >
+                      <Linkedin
+                        aria-hidden
+                        className="h-4 w-4 shrink-0 text-brand"
+                      />
+                      View LinkedIn profile
+                    </a>
+                  )}
+                </div>
+              )}
+
+              {/* Next executive */}
               {next && next.slug !== e.slug && (
-                <Link href={`/our-team/${next.slug}`} className="mt-12 flex items-center justify-between border-t border-line pt-6 hover:text-brand">
-                  <span>
-                    <span className="block text-[13px] text-steel">Next executive</span>
-                    <span className="font-display text-[18px] font-bold">{next.name}, {next.role}</span>
+                <Link
+                  href={`/our-team/${next.slug}`}
+                  className="group mt-10 flex items-center justify-between gap-4 border-t border-line py-6 transition-colors hover:border-brand"
+                >
+                  <span className="min-w-0">
+                    <span className="block text-xs font-semibold uppercase tracking-wider text-steel">
+                      Next executive
+                    </span>
+                    <span className="mt-1 block font-display text-base font-bold text-ink transition-colors group-hover:text-brand sm:text-lg">
+                      {next.name}
+                    </span>
+                    <span className="mt-1 block text-sm text-steel">
+                      {next.role}
+                    </span>
                   </span>
-                  <ArrowRight aria-hidden className="h-6 w-6" />
+
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-line text-brand transition-colors group-hover:border-brand group-hover:bg-brand group-hover:text-white">
+                    <ArrowRight aria-hidden className="h-5 w-5" />
+                  </span>
                 </Link>
               )}
             </div>
           </div>
         </div>
-      </article>
+      </main>
+
       <EnquiryBand />
     </>
   );

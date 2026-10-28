@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import { MissionVision } from "@/components/sections/MissionVision";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { EnquiryBand } from "@/components/sections/EnquiryBand";
@@ -8,112 +10,140 @@ import { clientTypes, company, services } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "ELESSY Nigeria Limited has delivered engineering, construction, water, power and solar projects across Nigeria since 1983.",
+  description:
+    "ELESSY Nigeria Limited has delivered engineering, construction, water, power and solar projects across Nigeria since 1983.",
 };
 
 export default function AboutPage() {
   return (
     <>
-      <PageHeader eyebrow="About ELESSY" title="Engineering and construction across Nigeria since 1983." />
+      <PageHeader
+        eyebrow="About ELESSY"
+        title="Engineering and construction across Nigeria since 1983."
+      />
 
-      <section aria-labelledby="story" className="section-y">
-        <div className="container-page grid items-center gap-12 lg:grid-cols-[6fr_5fr] lg:gap-20">
+      {/* Company history */}
+      <section
+        aria-labelledby="story"
+        className="section-y bg-white"
+      >
+        <div className="container-page grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <Reveal>
             <p className="eyebrow">Our story</p>
 
             <h2
               id="story"
-              className="mt-4 max-w-[20ch] text-h2"
+              className="mt-4 max-w-[17ch] font-display text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl"
             >
-              Built by engineers and managers, growing in strength.
+              Experience built over decades of engineering.
             </h2>
 
-            <div className="mt-8 space-y-5 text-[17px] leading-[1.75] text-steel">
+            <div className="mt-7 max-w-2xl space-y-5 text-base leading-8 text-steel md:text-[17px]">
               <p>
-                ELESSY Nigeria Limited was registered with the {company.regBody} as
-                a limited liability company in {company.founded} (Registration No.{" "}
-                {company.regNo}). It began with an associate team of experts with
-                both engineering and management backgrounds, and has been growing
-                in strength ever since.
+                ELESSY Nigeria Limited was registered with the{" "}
+                {company.regBody} as a limited liability company in{" "}
+                {company.founded} (Registration No. {company.regNo}). It began
+                with an associate team of experts with engineering and
+                management backgrounds and has continued to grow in strength.
               </p>
 
               <p>
                 Our experience spans building, electrical, mechanical and civil
-                engineering. The company was set up to import, sell, construct
-                and install engineering devices.
+                engineering. The company was established to import, sell,
+                construct and install engineering devices.
               </p>
 
               <p>
-                As the Nigerian economy has changed, so has ELESSY. We have
-                diversified into services, industry and power, and into boreholes,
-                potable and drinking water treatment plants, sewage plants, solar
-                energy and agro-allied services. With new energy innovation, we
-                have invested in solar services to complement the federal
-                government&apos;s efforts to revive the energy sector.
+                As Nigeria&apos;s needs have evolved, ELESSY has diversified
+                into industry, power and infrastructure, including boreholes,
+                potable water treatment, sewage treatment, solar energy and
+                agro-allied services. Our investment in solar solutions
+                complements the wider effort to improve energy access across
+                the country.
               </p>
             </div>
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="flex min-h-[320px] items-center justify-center bg-white p-8 md:min-h-[420px] md:p-12">
-              <div className="relative aspect-square w-full max-w-[320px]">
-                <Image
-                  src="/images/elessy-logo.png"
-                  alt="ELESSY Nigeria Limited company logo"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 30vw, 80vw"
-                  className="object-contain"
-                />
+            <div className="border border-line bg-site p-6 sm:p-9 lg:p-10">
+              <div className="flex min-h-[260px] items-center justify-center border-b border-line bg-white p-8 sm:min-h-[320px]">
+                <div className="relative aspect-square w-full max-w-[270px]">
+                  <Image
+                    src="/images/elessy-logo.png"
+                    alt="ELESSY Nigeria Limited"
+                    fill
+                    sizes="(min-width: 1024px) 30vw, 80vw"
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-5 pt-6">
+                <div>
+                  <p className="font-display text-3xl font-bold text-brand sm:text-4xl">
+                    {company.founded}
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-steel">
+                    Established in Nigeria
+                  </p>
+                </div>
+
+                <div className="border-l border-line pl-5">
+                  <p className="font-display text-xl font-bold text-ink">
+                    Nationwide
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-steel">
+                    Engineering and infrastructure services
+                  </p>
+                </div>
               </div>
             </div>
           </Reveal>
         </div>
       </section>
 
-      <section aria-label="Mission and vision" className="bg-brand text-white">
-        <div className="container-page grid gap-px bg-white/15 md:grid-cols-2">
-          <Reveal className="bg-brand py-14 md:py-20 md:pr-12">
-            <p className="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-signal">Our mission</p>
-            <p className="mt-5 max-w-md font-display text-[clamp(1.375rem,2.4vw,1.875rem)] font-bold leading-snug text-white">To provide the most effective and ethical representation possible, and to inspire moments of optimism and happiness through quality, professional service.</p>
-          </Reveal>
-          <Reveal delay={0.1} className="bg-brand py-14 md:py-20 md:pl-12">
-            <p className="font-display text-[12px] font-bold uppercase tracking-[0.22em] text-signal">Our vision</p>
-            <p className="mt-5 max-w-md font-display text-[clamp(1.375rem,2.4vw,1.875rem)] font-bold leading-snug text-white">To give our customers the best service from beginning to end, with clear and secure methods, and fast, quality delivery.</p>
-          </Reveal>
-        </div>
-      </section>
+      
 
-      <section aria-labelledby="what-we-do" className="section-y">
-        <div className="container-page grid gap-10 lg:grid-cols-[4fr_8fr] lg:gap-20">
-          <Reveal>
-            <p className="eyebrow">What we do</p>
-            <h2 id="what-we-do" className="mt-4 max-w-[14ch] text-h2">Professional services, delivered on time and on budget.</h2>
-            <p className="mt-5 text-[17px] leading-relaxed text-steel">We are committed to meeting our clients&apos; needs and requirements in a timely and cost-effective way, using all of our people and knowledge.</p>
-          </Reveal>
-          <ol className="border-t border-line">
-            {services.map((s, i) => (
-              <li key={s.slug} className="grid grid-cols-[2.5rem_1fr] gap-x-3 border-b border-line py-4 md:grid-cols-[2.5rem_minmax(0,1fr)_minmax(0,1fr)]">
-                <span className="text-[13px] tabular-nums text-steel">{String(i + 1).padStart(2, "0")}</span>
-                <span className="font-display text-[17px] font-bold leading-snug">{s.name}</span>
-                <span className="col-start-2 text-[14px] text-steel md:col-start-3">{s.short}</span>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
+      <MissionVision/>
 
-      <section aria-labelledby="clients" className="border-t border-line bg-white py-16 md:py-24">
-        <div className="container-page grid gap-10 lg:grid-cols-[4fr_8fr] lg:gap-20">
+      {/* Clients */}
+      <section
+        aria-labelledby="clients"
+        className="border-t border-line bg-site py-16 md:py-20 lg:py-24"
+      >
+        <div className="container-page grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
           <Reveal>
-            <p className="eyebrow">Our clients</p>
-            <h2 id="clients" className="mt-4 max-w-[14ch] text-h2">Projects throughout Nigeria.</h2>
+            <p className="eyebrow">Who we work with</p>
+
+            <h2
+              id="clients"
+              className="mt-4 max-w-[15ch] font-display text-3xl font-bold leading-tight tracking-tight text-ink md:text-4xl"
+            >
+              Supporting clients across Nigeria.
+            </h2>
           </Reveal>
+
           <Reveal delay={0.1}>
-            <p className="max-w-prose text-[17px] leading-relaxed text-steel">ELESSY undertakes projects across the country. Our clients include:</p>
-            <ul className="mt-6 flex flex-wrap gap-3">
-              {clientTypes.map((c) => (
-                <li key={c} className="rounded-full border border-line bg-site px-5 py-2.5 font-display text-[15px] font-bold">{c}</li>
+            <p className="max-w-xl text-base leading-7 text-steel">
+              Our work serves a range of organisations and sectors. We
+              approach each project with attention to its specific technical
+              requirements and operating environment.
+            </p>
+
+            <ul className="mt-7 border-t border-line">
+              {clientTypes.map((client) => (
+                <li
+                  key={client}
+                  className="flex items-center justify-between gap-4 border-b border-line py-4"
+                >
+                  <span className="text-base font-medium text-ink">
+                    {client}
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="h-2 w-2 shrink-0 bg-brand"
+                  />
+                </li>
               ))}
             </ul>
           </Reveal>

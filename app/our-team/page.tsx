@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function TeamPage() {
   return (
     <>
-      <PageHeader eyebrow="Our team" title="The people accountable for your project." intro="Meet the executives who lead ELESSY." />
+      <PageHeader eyebrow="Our team" title="Meet Our Executives" intro="The people committed to statisfying the and quality requirements of our clients." />
       <TeamCarousel />
       <EnquiryBand />
     </>

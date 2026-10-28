@@ -13,7 +13,7 @@ export default async function ContactPage({ searchParams }: Props) {
   const rows = [
     { Icon: Phone, label: "Phone and WhatsApp", value: site.phone, href: site.phoneHref },
     { Icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
-    { Icon: MapPin, label: "Office", value: site.address },
+    { Icon: MapPin, label: "Office", value: site.address3 },
     { Icon: Clock, label: "Hours", value: site.hours },
   ];
   return (

@@ -1,41 +1,32 @@
-
 @import "tailwindcss";
 
-:root {
-  /* ELESSY brand colors */
-  --brand: 14 74 54;
-  --brand-mid: 46 125 91;
-  --brand-deep: 10 53 39;
-  --signal: 232 163 23;
-  --ink: 20 32 29;
-  --steel: 91 107 102;
-  --sage: 169 196 182;
-  --mist: 237 241 238;
-  --site: 244 246 243;
-  --line: 217 224 219;
-}
+/* ELESSY Brand Theme — Tailwind CSS v4 */
+@theme {
+  /* Brand Colors */
+  --color-brand: rgb(204 0 51);       /* #CC0033 — Main red */
+  --color-brand-mid: rgb(230 0 58);   /* #E6003A */
+  --color-brand-deep: rgb(153 0 38);  /* #990026 */
 
-@theme inline {
-  /* Brand colors */
-  --color-brand: rgb(var(--brand));
-  --color-brand-mid: rgb(var(--brand-mid));
-  --color-brand-deep: rgb(var(--brand-deep));
-  --color-signal: rgb(var(--signal));
-  --color-ink: rgb(var(--ink));
-  --color-steel: rgb(var(--steel));
-  --color-sage: rgb(var(--sage));
-  --color-mist: rgb(var(--mist));
-  --color-site: rgb(var(--site));
-  --color-line: rgb(var(--line));
+  /* Accent */
+  --color-signal: rgb(245 184 0);     /* #F5B800 */
 
-  /* Fonts defined in app/layout.tsx */
-  --font-display: var(--font-display);
-  --font-sans: var(--font-body);
+  /* Neutral Colors */
+  --color-ink: rgb(31 26 26);         /* #1F1A1A */
+  --color-steel: rgb(107 99 98);      /* #6B6362 */
+  --color-sage: rgb(232 190 190);     /* #E8BEBE */
+  --color-mist: rgb(245 238 236);     /* #F5EEEC */
+  --color-site: rgb(250 247 245);     /* #FAF7F5 */
+  --color-line: rgb(229 221 219);     /* #E5DDDB */
+
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Archivo", sans-serif;
 
   /* Layout */
-  --container-page: 1440px;
+  --max-width-page: 1440px;
 }
 
+/* Base Styles */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -60,20 +51,20 @@
   }
 
   :focus-visible {
-    outline: 3px solid rgb(var(--signal));
+    outline: 3px solid var(--color-signal);
     outline-offset: 3px;
     border-radius: 2px;
   }
 
   ::selection {
-    background: rgb(var(--signal) / 0.45);
+    background: rgb(204 0 51 / 25%);
   }
 }
 
+/* Reusable Components */
 @layer components {
   .container-page {
-    @apply mx-auto w-full px-5 md:px-10;
-    max-width: 1440px;
+    @apply mx-auto w-full max-w-page px-5 md:px-10;
   }
 
   .section-y {
