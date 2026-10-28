@@ -22,11 +22,11 @@ export const projects: Project[] = [
     date: "Aug. 2025",
     client: "Federal Ministry of Agriculture & Food Security.",
     description: [
-      "Clearing of land executed at Nassarawa, Toto[cite: 9].",
-      "Commissioned by the Federal Ministry of Agriculture & Food Security[cite: 9]."
+      "Clearing of land executed at Nassarawa, Toto.",
+      "Commissioned by the Federal Ministry of Agriculture & Food Security."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Clearing of land cover" }
+      { src: "images/projects/land-clearing.jpg", alt: "Clearing of land cover" }
     ]
   },
   {
@@ -38,11 +38,11 @@ export const projects: Project[] = [
     date: "Feb, 2023",
     client: "Kogi State Government",
     description: [
-      "Contract For Solid Waste Management Service With Lokoja Metropolis carried out in Lokoja, Kogi State[cite: 9].",
-      "Managed in partnership with the Kogi State Government[cite: 9]."
+      "Contract For Solid Waste Management Service With Lokoja Metropolis carried out in Lokoja, Kogi State.",
+      "Managed in partnership with the Kogi State Government."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Contract For Solid Waste Management Service With Lokoja Metropolis cover" }
+      { src: "images/projects/waste-management.jpg", alt: "Contract For Solid Waste Management Service With Lokoja Metropolis cover" }
     ]
   },
   {
@@ -54,11 +54,11 @@ export const projects: Project[] = [
     date: "May.2022",
     client: "Assistant Director Of Maintenance",
     description: [
-      "Standby Plumbing Contractor At Governors' Residence located in Garki, Abuja[cite: 9].",
-      "Supervised under the Office of the Assistant Director Of Maintenance[cite: 9]."
+      "Standby Plumbing Contractor At Governors' Residence located in Garki, Abuja.",
+      "Supervised under the Office of the Assistant Director Of Maintenance."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Standby Plumbing Contractor At Governors' Residence cover" }
+      { src: "images/projects/plumbing.jpg", alt: "Standby Plumbing Contractor At Governors' Residence cover" }
     ]
   },
   {
@@ -70,11 +70,11 @@ export const projects: Project[] = [
     date: "Aug.2021",
     client: "Maritime Academy Of Nigeria",
     description: [
-      "Contract For Finishing Of Academy Block At The Maritime Academy Of Nigeria executed in Oron, Akwa Ibom State[cite: 9].",
-      "Client: Maritime Academy Of Nigeria[cite: 9]."
+      "Contract For Finishing Of Academy Block At The Maritime Academy Of Nigeria executed in Oron, Akwa Ibom State.",
+      "Client: Maritime Academy Of Nigeria."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Contract For Finishing Of Academy Block At The Maritime Academy Of Nigeria cover" }
+      { src: "images/projects/maritime.jpg", alt: "Contract For Finishing Of Academy Block At The Maritime Academy Of Nigeria cover" }
     ]
   },
   {
@@ -86,8 +86,8 @@ export const projects: Project[] = [
     date: "Nov.2020",
     client: "Maritime Academy Of Nigeria",
     description: [
-      "Contract For Conversion Of School Of Maritime Transport Studies Lecture Hall To A Mini Auditorium At The Maritime Academy Of Nigeria[cite: 9].",
-      "Conducted for the Maritime Academy Of Nigeria in Oron, Akwa Ibom State[cite: 9]."
+      "Contract For Conversion Of School Of Maritime Transport Studies Lecture Hall To A Mini Auditorium At The Maritime Academy Of Nigeria.",
+      "Conducted for the Maritime Academy Of Nigeria in Oron, Akwa Ibom State."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Contract For Conversion Of School Of Maritime Transport Studies Lecture Hall To A Mini Auditorium At The Maritime Academy Of Nigeria cover" }
@@ -102,8 +102,8 @@ export const projects: Project[] = [
     date: "Dec.2016",
     client: "Nation Biotechnology Development Agency (NABDA)",
     description: [
-      "Construction Of Perimeter Block Wall Fence Of Nation Biotechnology Development Agency Headquarters in Lugbe Abuja[cite: 9].",
-      "Commissioned by the Nation Biotechnology Development Agency (NABDA)[cite: 9]."
+      "Construction Of Perimeter Block Wall Fence Of Nation Biotechnology Development Agency Headquarters in Lugbe Abuja.",
+      "Commissioned by the Nation Biotechnology Development Agency (NABDA)."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Construction Of Perimeter Block Wall Fence Of Nation Biotechnology Development Agency Headquarters cover" }
@@ -118,8 +118,8 @@ export const projects: Project[] = [
     date: "Mar.2016",
     client: "Living faith World Outreach Centre (faith Tabernacle)",
     description: [
-      "Construction Of Wardrobes And Kitchen cabinet At Mandate Service Quarters, Canaan Land, Ota Lagos[cite: 9].",
-      "Client: Living faith World Outreach Centre (faith Tabernacle)[cite: 9]."
+      "Construction Of Wardrobes And Kitchen cabinet At Mandate Service Quarters, Canaan Land, Ota Lagos.",
+      "Client: Living faith World Outreach Centre (faith Tabernacle)."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Construction Of Wardrobes And Kitchen cabinet At Mandate Service Quarters, Canaan Land, Ota Lagos cover" }

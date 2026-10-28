@@ -16,11 +16,27 @@ import { cn } from "@/lib/utils";
 
 const PROJECTS_PER_PAGE = 12;
 
+function normalizeImageSrc(src: string | undefined): string | null {
+  if (!src?.trim()) return null;
+
+  const path = src.trim();
+
+  // Preserve external image URLs.
+  if (/^https?:\/\//i.test(path)) {
+    return path;
+  }
+
+  // Remove "public/" when it is included in the source path.
+  const localPath = path.replace(/^public\//i, "");
+
+  // Local Next.js public assets must start with "/".
+  return `/${localPath.replace(/^\/+/, "")}`;
+}
+
 export function ProjectsGrid() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const totalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
-
   const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
 
   const visibleProjects = useMemo(
@@ -34,7 +50,7 @@ export function ProjectsGrid() {
   );
 
   function goToPage(page: number) {
-    setCurrentPage(Math.max(1, Math.min(page, totalPages)));
+    setCurrentPage(Math.max(1, Math.min(page, Math.max(totalPages, 1))));
 
     document
       .getElementById("projects-grid")
@@ -52,12 +68,10 @@ export function ProjectsGrid() {
           <div className="max-w-2xl">
             <div className="mb-4 flex items-center gap-3">
               <span className="h-[3px] w-10 bg-red-600" />
-
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-600">
                 Our portfolio
               </span>
             </div>
-
           </div>
 
           <div className="flex items-center gap-3 md:pb-1">
@@ -72,7 +86,6 @@ export function ProjectsGrid() {
               <p className="text-2xl font-bold tracking-tight text-neutral-950">
                 {projects.length.toString().padStart(2, "0")}
               </p>
-
               <p className="text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">
                 Total projects
               </p>
@@ -94,7 +107,6 @@ export function ProjectsGrid() {
             <h3 className="font-display text-xl font-bold text-neutral-950">
               No projects available
             </h3>
-
             <p className="mt-3 text-sm leading-6 text-neutral-600">
               Projects will appear here when they become available.
             </p>
@@ -104,85 +116,87 @@ export function ProjectsGrid() {
             id="projects-grid"
             className="scroll-mt-24 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-7 lg:gap-y-12"
           >
-            {visibleProjects.map((project, index) => (
-              <li
-                key={String(project.slug ?? `${project.name}-${index}`)}
-                className="min-w-0"
-              >
-                <Link
-                  href={`/projects/${project.slug}`}
-                  className="group flex h-full flex-col"
+            {visibleProjects.map((project, index) => {
+              const imageSrc = normalizeImageSrc(project.images?.[0]?.src);
+
+              return (
+                <li
+                  key={String(project.slug ?? `${project.name}-${index}`)}
+                  className="min-w-0"
                 >
-                  {/* Project image */}
-                  <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
-                    {project.images?.[0]?.src ? (
-                      <Image
-                        src={project.images[0].src}
-                        alt={project.images[0].alt || project.name}
-                        fill
-                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 flex items-center justify-center bg-neutral-100 px-4 text-center text-sm text-neutral-500">
-                        Project image unavailable
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="group flex h-full flex-col"
+                  >
+                    {/* Project image */}
+                    <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
+                      {imageSrc ? (
+                        <Image
+                          src={imageSrc}
+                          alt={project.images?.[0]?.alt || project.name}
+                          fill
+                          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center bg-neutral-100 px-4 text-center text-sm text-neutral-500">
+                          Project image unavailable
+                        </div>
+                      )}
+
+                      {/* Image overlay */}
+                      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
+
+                      {/* Category label */}
+                      <div className="absolute left-4 top-4">
+                        <span className="inline-flex max-w-full items-center bg-white px-3 py-2 text-[10px] font-bold uppercase tracking-[0.13em] text-neutral-900 shadow-sm sm:text-[11px]">
+                          {project.category}
+                        </span>
                       </div>
-                    )}
 
-                    {/* Image overlay */}
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
-
-                    {/* Category label */}
-                    <div className="absolute left-4 top-4">
-                      <span className="inline-flex max-w-full items-center bg-white px-3 py-2 text-[10px] font-bold uppercase tracking-[0.13em] text-neutral-900 shadow-sm sm:text-[11px]">
-                        {project.category}
-                      </span>
+                      {/* Arrow action */}
+                      <div className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center bg-red-600 text-white transition-all duration-300 group-hover:bg-white group-hover:text-red-600">
+                        <ArrowUpRight
+                          aria-hidden="true"
+                          className="h-5 w-5 transition-transform duration-300 group-hover:rotate-45"
+                        />
+                      </div>
                     </div>
 
-                    {/* Arrow action */}
-                    <div className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center bg-red-600 text-white transition-all duration-300 group-hover:bg-white group-hover:text-red-600">
-                      <ArrowUpRight
-                        aria-hidden="true"
-                        className="h-5 w-5 transition-transform duration-300 group-hover:rotate-45"
-                      />
-                    </div>
-                  </div>
+                    {/* Project information */}
+                    <div className="flex flex-1 flex-col border-b border-neutral-200 py-5 transition-colors duration-300 group-hover:border-red-600">
+                      <h3 className="font-display text-lg font-bold leading-snug text-neutral-950 transition-colors duration-200 group-hover:text-red-600 sm:text-xl">
+                        {project.name}
+                      </h3>
 
-                  {/* Project information */}
-                  <div className="flex flex-1 flex-col border-b border-neutral-200 py-5 transition-colors duration-300 group-hover:border-red-600">
-                    <h3 className="font-display text-lg font-bold leading-snug text-neutral-950 transition-colors duration-200 group-hover:text-red-600 sm:text-xl">
-                      {project.name}
-                    </h3>
-
-                    <p className="mt-3 flex items-start gap-2 text-sm leading-6 text-neutral-600">
-                      <MapPin
-                        aria-hidden="true"
-                        className="mt-1 h-4 w-4 shrink-0 text-red-600"
-                      />
-
-                      <span>{project.location}</span>
-                    </p>
-
-                    {project.date && (
-                      <p className="mt-2 pl-6 text-xs font-medium tracking-wide text-neutral-500">
-                        {project.date}
+                      <p className="mt-3 flex items-start gap-2 text-sm leading-6 text-neutral-600">
+                        <MapPin
+                          aria-hidden="true"
+                          className="mt-1 h-4 w-4 shrink-0 text-red-600"
+                        />
+                        <span>{project.location}</span>
                       </p>
-                    )}
 
-                    <div className="mt-5 flex items-center justify-between gap-3 pt-1">
-                      <span className="text-xs font-bold uppercase tracking-[0.12em] text-neutral-500 transition-colors group-hover:text-red-600">
-                        Explore project
-                      </span>
+                      {project.date && (
+                        <p className="mt-2 pl-6 text-xs font-medium tracking-wide text-neutral-500">
+                          {project.date}
+                        </p>
+                      )}
 
-                      <ArrowRight
-                        aria-hidden="true"
-                        className="h-4 w-4 text-red-600 transition-transform duration-300 group-hover:translate-x-1"
-                      />
+                      <div className="mt-5 flex items-center justify-between gap-3 pt-1">
+                        <span className="text-xs font-bold uppercase tracking-[0.12em] text-neutral-500 transition-colors group-hover:text-red-600">
+                          Explore project
+                        </span>
+                        <ArrowRight
+                          aria-hidden="true"
+                          className="h-4 w-4 text-red-600 transition-transform duration-300 group-hover:translate-x-1"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </li>
-            ))}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         )}
 
@@ -196,10 +210,7 @@ export function ProjectsGrid() {
               Showing{" "}
               <span className="font-semibold text-neutral-950">
                 {startIndex + 1}–
-                {Math.min(
-                  startIndex + PROJECTS_PER_PAGE,
-                  projects.length
-                )}
+                {Math.min(startIndex + PROJECTS_PER_PAGE, projects.length)}
               </span>{" "}
               of{" "}
               <span className="font-semibold text-neutral-950">

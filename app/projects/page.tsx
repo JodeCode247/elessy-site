@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <PageHeader eyebrow="Projects" title="Work we have delivered across Nigeria." intro="A selection of completed projects. Select one to see more." />
+      <PageHeader eyebrow="Projects" title="Work we have delivered across Nigeria." />
       <ProjectsGrid />
       <EnquiryBand />
     </>
