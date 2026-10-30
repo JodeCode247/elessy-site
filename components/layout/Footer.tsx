@@ -61,6 +61,12 @@ export function Footer() {
           <FooterLink href={site.phoneHref}>
             {site.phone}
           </FooterLink>
+          <FooterLink href={site.phoneHref2}>
+            {site.phone2}
+          </FooterLink>
+          <FooterLink href={site.phoneHref3}>
+            {site.phone3}
+          </FooterLink>
 
           <div className="mt-4 space-y-3">
             <CompanyMap city="ABUJA" address={site.address} />

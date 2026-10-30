@@ -11,6 +11,8 @@ export const site = {
   phone2: "+234 806 574 4015",
   phone3: "+234 254 574 4994",
   phoneHref: "tel:+2349122394851",
+  phoneHref2: "tel:+2348065744015",
+  phoneHref3: "tel:+2342545744994",
   whatsappHref: "https://wa.me/2347085335167",
   email: "elessynglimited@gmail.com",
   address:"No.2, Owo close, Off Akure Crescent,Behind Post Office,Area 10 Garki, Abuja.",
