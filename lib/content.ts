@@ -2,7 +2,7 @@
 export type Service = {
   slug: string; name: string; short: string; summary: string; scope: string[];
   image: string; imageAlt: string;
-  icon: "ruler" | "compass" | "hardhat" | "zap" | "sun" | "droplets" | "radio" | "armchair" | "waves" | "package";
+  icon: "ruler" | "compass" | "hardhat" | "zap" | "sun" | "droplets" | "radio" | "armchair" | "waves" | "package"|"wrench";
 };
 
 export const services: Service[] = [
@@ -14,7 +14,16 @@ export const services: Service[] = [
   { slug: "solar-installation", name: "Solar installation", short: "Solar street lights and solar boreholes", summary: "Solar energy services to complement efforts to revive Nigeria's energy sector, including solar street lights and solar boreholes with submersible pumps.", scope: ["Solar street light installation", "Solar boreholes with submersible pumps", "System design and sizing", "Maintenance plans"], image: "/images/hero-solar.jpg", imageAlt: "Rows of solar panels under a low sun", icon: "sun" },
   { slug: "telecom-equipment", name: "Telecom equipment", short: "Supply, installation and commissioning", summary: "Supply and installation of telecommunication equipment, from masts and antennas to power and site fit-out.", scope: ["Equipment supply", "Mast and antenna installation", "Power and site fit-out", "Commissioning and handover"], image: "/images/eleman.jpg", imageAlt: "Lattice telecom tower with antennas", icon: "radio" },
   { slug: "electrical-installation", name: "Electrical installation", short: "Power from rural electrification to transformers", summary: "Internal and external electrical work, from rural electrification and street lighting to high and low tension systems, transformers and generator sets.", scope: ["Rural electrification", "Internal and external electrical work", "Street lighting, high and low tension installation", "Transformers and generator sets, supply and installation"], image: "/images/electrical-installation.jpg", imageAlt: "Power infrastructure silhouetted at sunset", icon: "zap" },
-
+  { slug: "mechanical-installation", name: "Mechanical installation", short: "Advanced HVAC, plumbing, and industrial piping", summary: "Comprehensive mechanical engineering solutions including central air conditioning, ventilation systems, industrial plumbing, fire protection, and heavy equipment installation.",
+    scope: [
+    "HVAC systems installation and maintenance", 
+    "Industrial and commercial plumbing infrastructure", 
+    "Fire protection and sprinkler systems", 
+    "Piping networks and machinery installation"
+  ], image: "/images/mechanical-installation.jpg", 
+  imageAlt: "Industrial mechanical piping and ventilation systems", 
+  icon: "wrench"},
+    
   { slug: "borehole-drilling", name: "Borehole drilling", short: "Survey, drilling, pumping and treatment", summary: "Reliable water supply, from site survey and drilling through pump installation and treatment.", scope: ["Hydrogeological survey", "Drilling and casing", "Pump and storage installation", "Water treatment options"], image: "/images/borehole.jpg", imageAlt: "Drilling rig next to a borehole spray of water", icon: "droplets" },
   { slug: "general-supplies", name: "General supplies", short: "Importation and supply of goods", summary: "General supplier of goods, including the importation and sale of engineering devices.", scope: ["Importation of engineering devices", "Supply of goods", "Delivery to site", "Quotes on request"], image: "/images/hero-construction.jpg", imageAlt: "Building site with a tower crane at dusk", icon: "package" },
 ];

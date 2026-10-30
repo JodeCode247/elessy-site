@@ -13,7 +13,7 @@ export type Executive = {
 // PLACEHOLDERS: replace names, roles, bios and photos with the real executives.
 export const executives: Executive[] = [
   { slug: "managing-director",
-    name: "Chief (AMB) Joe Elebiyo", 
+    name: "Chief (AMB) Joe Elebiyo Ph.D", 
     role: "Managing Director/CEO", 
     bio: ["Chief Joe Elebiyo studied sociology at the University of Abuja. A seasoned professional with a unique touch of experience, he has handled several projects in Nigeria. He was the Board Chairman of VITA TOK Ltd Company (American based), Chairman of KOCCIMA Investment Nig. Ltd, Patron of Cassava Shake Holder Association of Nigeria Abuja, and the MD/CEO of Elessy Nig. Ltd, Board Member Cocoa Researcher Institute Ibadan (CRIN), AG Board Chairman Upper Basin Authority Yola Adamawa State, and President Kogi State Chamber of Commerce Industry and Agriculture."],
     photo:"/images/team/elebiyo.jpg", 

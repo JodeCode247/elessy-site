@@ -48,15 +48,22 @@ export function EnquiryForm({ defaultService, defaultProduct }: { defaultService
 
   if (status === "success") {
     return (
-      <div role="status" className="rounded-[6px] border border-line bg-white p-8 md:p-10">
-        <CheckCircle2 aria-hidden className="h-10 w-10 text-brand-mid" />
-        <h2 className="mt-5 text-h3">Thank you for contacting ELESSY Nigeria Limited.</h2>
-        <p className="mt-3 text-steel">
-          We have received your enquiry, and a member of our team will review it and respond within one business day.
-          For urgent matters, please call us on {site.phone}.
-        </p>
-        <Button variant="outline" className="mt-6" onClick={() => setStatus("idle")}>Send another enquiry</Button>
-      </div>
+          <div role="status" className="rounded-[6px] border border-line bg-white p-8 md:p-10">
+      <CheckCircle2 aria-hidden className="h-10 w-10 text-green-600" />
+      <h2 className="mt-5 text-h3">Thank you for contacting ELESSY Nigeria Limited.</h2>
+      <p className="mt-3 text-steel">
+        We have received your enquiry, and a member of our team will review it and respond within one business day.
+        For urgent matters, please call us on {site.phone}.
+      </p>
+      <Button 
+        variant="outline" 
+        className="mt-6 border-green-600 text-green-600 hover:bg-green-600" 
+        onClick={() => setStatus("idle")}
+      >
+        Send another enquiry
+      </Button>
+</div>
+
     );
   }
 

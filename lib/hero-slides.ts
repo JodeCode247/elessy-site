@@ -8,6 +8,7 @@ export type HeroSlide = {
 };
 
 export const heroSlides: HeroSlide[] = [
+  { src: "/images/team/elessy-building.jpg", alt: "Tower crane and steel frame of a building under construction at dusk", label: "C construction", position: { desktop: "62% 55%", mobile: "60% 50%" } },
   { src: "/images/beautiful-view-construction-site-city-sunset.jpg", alt: "Tower crane and steel frame of a building under construction at dusk", label: "Building construction", position: { desktop: "62% 55%", mobile: "60% 50%" } },
   { src: "/images/hero-telecom.jpg", alt: "Lattice telecom tower with antennas against rolling hills", label: "Telecom infrastructure", position: { desktop: "62% 50%", mobile: "62% 45%" } },
   { src: "/images/hero-solar.jpg", alt: "Rows of solar panels receding toward a low sun", label: "Solar installation", position: { desktop: "50% 62%", mobile: "50% 60%" } },

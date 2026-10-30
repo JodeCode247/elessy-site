@@ -71,15 +71,16 @@ export async function notifyTeam(d: EnquiryInput): Promise<boolean> {
   const to = process.env.ENQUIRY_TO_EMAIL;
   if (!to) return false;
   const text = [
-    "NEW CLIENT ENQUIRY",
-    "",
-    `Name: ${d.name}`,
-    `Phone: ${d.phone}`,
-    `Email: ${d.email || "not given"}`,
-    `Service: ${d.service || "not specified"}`,
-    "",
-    d.message,
+    "[NEW ENQUIRY - ELESSY]",
+    "----------------------------------------",
+    `Client:   ${d.name}`,
+    `Phone:    ${d.phone}`,
+    `Email:    ${d.email || "Not provided"}`,
+    `Service:  ${d.service || "Not specified"}`,
+    `Message:  ${d.message || "None"}`,
+    "----------------------------------------"
   ].join("\n");
+
   return send({
     to,
     subject: `New enquiry: ${d.service || "General"} from ${d.name}`,

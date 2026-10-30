@@ -1,7 +1,4 @@
 // Single source of truth for business details.
-
-import { address } from "framer-motion/client";
-
 // PLACEHOLDERS: replace phone, WhatsApp, email, address and hours with ELESSY's real details.
 export const site = {
   name: "ELESSY Nigeria Limited",
@@ -10,28 +7,29 @@ export const site = {
   description:
     "ELESSY Nigeria Limited delivers architecture, engineering consultancy, building construction, electrical, solar, borehole and telecom installation across Nigeria.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://elessyng.com.ng",
-  phone: "+234 912 239 4951",
-  phone2: "+234 818 692 0365",
-  phone3: "+234 803 254 4994",
-  phoneHref: "tel:+2349122394951",
-  whatsappHref: "https://wa.me/2348033154332",
-  email2: "elessy2003@yahoo.com",
-  email: "elessynigerialimited@gmail.com",
+  phone: "+234 912 239 4851",
+  phone2: "+234 806 574 4015",
+  phone3: "+234 254 574 4994",
+  phoneHref: "tel:+2349122394851",
+  whatsappHref: "https://wa.me/2347085335167",
+  email: "elessynglimited@gmail.com",
   address:"No.2, Owo close, Off Akure Crescent,Behind Post Office,Area 10 Garki, Abuja.",
-  address2: "No. 5, Assembly Road Maplewood Estate, Oko-Oba,Agege, Lagos State",
+  address2: "12 Sanyaolu Street Oko Oba Agege Lagos",
   address3: "Suite 1&3 Elessy Office Complex,No. 51, Okene-Kabba Road,Opp. Civil Defence Office,Lokoja, Kogi State.",
-  hours: "Monday to Friday, 8:00am to 4:00pm",
-  client_message: "Hello Elessy ng, I am interested in your engineering and construction services. Can you discuss."
+  hours: "Monday to Friday, 8:00am to 5:00pm",
+  client_message: "Hello Elessy ng, I am interested in your engineering and construction services. Can we discuss."
 } as const;
 
 export const nav = [
-  { href: "/services", label: "Services" },
-  { href: "/products", label: "Products" },
-  { href: "/our-team", label: "Our Team" },
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/services", label: "Services" },
+  
+  { href: "/our-team", label: "Our Team" },
   { href: "/projects", label: "Projects" },
   // { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
+  { href: "/products", label: "Products" },
   
   
 ] as const;

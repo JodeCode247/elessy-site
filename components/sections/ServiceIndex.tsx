@@ -9,7 +9,7 @@ export function ServiceIndex() {
       <div className="container-page grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-20">
         <Reveal>
           <p className="eyebrow">What we deliver</p>
-          <h2 id="service-index" className="mt-4 max-w-[14ch] text-h2">Seven disciplines. One accountable team.</h2>
+          <h2 id="service-index" className="mt-4 max-w-[14ch] text-h2">Our disciplines. One accountable team.</h2>
           <Link href="/services" className="mt-8 inline-flex min-h-[44px] items-center gap-2 font-display text-[15px] font-bold text-brand hover:underline">
             All services <ArrowRight aria-hidden className="h-4 w-4" />
           </Link>

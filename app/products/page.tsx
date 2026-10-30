@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Products and catalogue", description
 export default function ProductsPage() {
   return (
     <>
-      <PageHeader eyebrow="Products and catalogue" title="Equipment we supply and install." intro="We make acquiring and setting up your equipment seamless. Feel free to request a quote on any item you require. Depending on your project's needs, we can supply the product on its own, or our team of expert technicians can handle the entire process from start to finish—including professional installation and full commissioning to ensure everything runs perfectly." />
+      <PageHeader eyebrow="Products and catalogue" title="Equipment we supply and install." intro= "We supply, install and commission engineering equipment for industrial, commercial and infrastructure projects. Whether you need equipment supplied or require a complete installation, our team provides the technical support and expertise to ensure every system is properly installed, tested and ready for operation." />
       <ProductsGrid />
       <EnquiryBand />
     </>

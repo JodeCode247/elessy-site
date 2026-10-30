@@ -6,6 +6,9 @@ import { Button } from "@/components/ui/Button";
 import { heroSlides } from "@/lib/hero-slides";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { MapPin, X, ExternalLink } from "lucide-react";
+
+
 
 const INTERVAL_MS = 5000; // 5 seconds per image
 const SWIPE_PX = 48;
@@ -124,8 +127,12 @@ export function HeroSlideshow() {
 
         {/* Yellow primary button, white secondary button */}
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-          <Button href="/contact" className="min-h-[54px] sm:px-8">
-            Make an enquiry
+          <Button
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(site.address3)}`}
+            className="min-h-[54px] sm:px-8"
+          >
+            <MapPin aria-hidden="true" className="h-4 w-4" />
+            Company Location
           </Button>
           <Button href="/services" variant="light" className="min-h-[54px] sm:px-8">
             View our services
