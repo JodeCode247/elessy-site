@@ -15,9 +15,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    name: "Clearing of land",
-    slug: "clearing-of-land",
-    location: "Nassarawa, Toto",
+    name: "Clearing of Farm Land of Federal Ministry of Agriculture",
+    slug: "clearing-of-farm-land",
+    location: "Toto, Nassarawa State",
     category: "General Services",
     date: "Aug. 2025",
     client: "Federal Ministry of Agriculture & Food Security.",
@@ -47,9 +47,9 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: "Standby Plumbing Contractor At Governors' Residence",
-    slug: "standby-plumbing-contractor-at-governors-residence",
-    location: "Garki, Abuja",
+    name: "Contract for Plumbing Maintenance Service for Central Bank of Nigeria Governor's Residence",
+    slug: "standby-plumbing-contractor-at-CBN-governors-residence",
+    location: "Wuse, Abuja",
     category: "Plumbing & Maintenance",
     date: "May.2022",
     client: "Assistant Director Of Maintenance",
@@ -94,15 +94,15 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 6,
-    name: "Construction Of Perimeter Block Wall Fence Of Nation Biotechnology Development Agency Headquarters",
-    slug: "construction-of-perimeter-block-wall-fence-of-nation-biotechnology-development-agency-headquarters",
-    location: "Lugbe Abuja",
+    id: 6, //this
+    name: "Construction Of Perimeter  Wall Fence Of National Biotechnology Development Agency Headquarters",
+    slug: "construction-of-perimeter-wall-fence-of-nation-biotechnology-development-agency-headquarters",
+    location: "Lugbe, Abuja",
     category: "Construction",
     date: "Dec.2016",
     client: "Nation Biotechnology Development Agency (NABDA)",
     description: [
-      "Construction Of Perimeter Block Wall Fence Of Nation Biotechnology Development Agency Headquarters in Lugbe Abuja.",
+      "Construction Of Perimeter  Wall Fence Of Nation Biotechnology Development Agency Headquarters in Lugbe Abuja.",
       "Commissioned by the Nation Biotechnology Development Agency (NABDA)."
     ],
     images: [
@@ -111,7 +111,7 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    name: "Construction Of Wardrobes And Kitchen cabinet At Mandate Service Quarters, Canaan Land, Ota Lagos",
+    name: "Construction Of Wardrobes And Kitchen cabinet At Mandate Service Quarters Living Faith Church, Canaan Land Ota",
     slug: "construction-of-wardrobes-and-kitchen-cabinet-at-mandate-service-quarters",
     location: "Ota, Lagos State",
     category: "Carpentry & Joinery",
@@ -127,9 +127,9 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    name: "Construction of 200 capacity church auditorium,",
+    name: "Construction of 200 capacity Living Faith Church auditorium ",
     slug: "construction-of-200-capacity-church-auditorium",
-    location: "Ucha Benue State",
+    location: "Ucha, Benue State",
     category: "Building Construction",
     date: "2016",
     client: "Living Faith Church",
@@ -159,18 +159,18 @@ export const projects: Project[] = [
   },
   {
     id: 10,
-    name: "Supply Of (MDGs) Drugs To 34 Health Facilities",
+    name: "Supply Of (MDGs) Medication Drugs To 34 Health Care Facilities",
     slug: "supply-of-mdgs-drugs-to-34-health-facilities",
     location: "Kabba/Bunu L.G.A Kogi State",
     category: "Medical Supply",
     date: "Jul.2012",
     client: "Kogi State MDGs",
     description: [
-      "Supply Of (MDGs) Drugs To 34 Health Facilities across Kabba/Bunu L.G.A Kogi State[cite: 10].",
+      "Supply Of (MDGs) Medication Drugs To 34 Health Care Facilities across Kabba/Bunu L.G.A Kogi State[cite: 10].",
       "Sponsored by Kogi State MDGs[cite: 10]."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Supply Of (MDGs) Drugs To 34 Health Facilities cover" }
+      { src: "images/projects/image10.jpg", alt: "Supply Of (MDGs) Drugs To 34 Health Facilities cover" }
     ]
   },
   {
@@ -202,7 +202,7 @@ export const projects: Project[] = [
       "Client: State House Abuja (MDGs)[cite: 10]."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Supply Of (MDGs) Class Room Furniture To 3 Location In Kogi State cover" }
+      { src: "images/projects/image12.jpg", alt: "Supply Of (MDGs) Class Room Furniture To 3 Location In Kogi State cover" }
     ]
   },
   {
@@ -215,7 +215,7 @@ export const projects: Project[] = [
     client: "Nation Biotechnology Development Agency (NABDA)",
     description: [
       "Contract For Part Fencing Of Bio-Resource Development Center At Owode, managed from Wuse, Abuja[cite: 10].",
-      "Client: Nation Biotechnology Development Agency (NABDA)[cite: 10]."
+      "Client: Nation Biotechnology Development Agency (NABDA)."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Contract For Part Fencing Of Bio-Resource Development Center At Owode cover" }
@@ -223,18 +223,18 @@ export const projects: Project[] = [
   },
   {
     id: 14,
-    name: "Production Of A Set Of ETF Standard Furniture For A Block",
-    slug: "production-of-a-set-of-etf-standard-furniture-for-a-block",
-    location: "UBE/JSS/Slamiya Olle, Omala L.G.A",
+    name: "Production Of A Set Of ETF Standard Furniture For Block Of Classroom",
+    slug: "production-of-a-set-of-etf-standard-furniture",
+    location: "UBE/JSS/Slamiya Ife, Omala L.G.A",
     category: "Furniture Manufacturing",
     date: "Jan.2010",
     client: "Kogi State Universal Basic Education Board",
     description: [
       "Production Of A Set Of ETF Standard Furniture For A Block at UBE/JSS/Slamiya Olle, Omala L.G.A[cite: 10].",
-      "Client: Kogi State Universal Basic Education Board[cite: 10]."
+      "Client: Kogi State Universal Basic Education Board."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Production Of A Set Of ETF Standard Furniture For A Block cover" }
+      { src: "images/projects/image14.jpg", alt: "Production Of A Set Of ETF Standard Furniture For A Block cover" }
     ]
   },
   {
@@ -271,7 +271,7 @@ export const projects: Project[] = [
   },
   {
     id: 17,
-    name: "Survey Of Telecommunication Tower (Mass)",
+    name: "Survey Of Telecommunication Tower (Mass) For National Commuincation Commission (NCC) North-West Zone Area Of Nigeria",
     slug: "survey-of-telecommunication-tower-mass",
     location: "North West Zone Nigeria",
     category: "Surveying Services",
@@ -287,7 +287,7 @@ export const projects: Project[] = [
   },
   {
     id: 18,
-    name: "Furnishing Of The NHIS Zonal Manager's Residence",
+    name: "Furnishing Of The National Health Insurance Scheme (NHIS) Zonal Manager's Residence",
     slug: "furnishing-of-the-nhis-zonal-managers-residence-kano",
     location: "Kano, Kano State",
     category: "Interior Furnishing",
@@ -303,8 +303,8 @@ export const projects: Project[] = [
   },
   {
     id: 19,
-    name: "Furnishing Of The NHIS Zonal Manager's Residence",
-    slug: "furnishing-of-the-nhis-zonal-managers-residence-lagos",
+    name: "Furnishing Of The National Health Insurance Scheme (NHIS) Zonal Manager's Residence",
+    slug: "furnishing-of-the-Nhis-zonal-managers-residence-lagos",
     location: "Lagos, Lagos State",
     category: "Interior Furnishing",
     date: "May.1999",
@@ -319,7 +319,7 @@ export const projects: Project[] = [
   },
   {
     id: 20,
-    name: "Furnishing Of The NHIS Zonal Manager's Residence",
+    name: "Furnishing Of The National Health Insurance Scheme (NHIS) Zonal Manager's Residence",
     slug: "furnishing-of-the-nhis-zonal-managers-residence-enugu",
     location: "Enugu, Enugu State",
     category: "Interior Furnishing",
@@ -335,7 +335,7 @@ export const projects: Project[] = [
   },
   {
     id: 21,
-    name: "Furnishing Of The NHIS Zonal Manager's Residence",
+    name: "Furnishing Of The National Health Insurance Scheme (NHIS) Zonal Manager's Residence",
     slug: "furnishing-of-the-nhis-zonal-managers-residence-port-harcourt",
     location: "Port-Harcourt, River State",
     category: "Interior Furnishing",
@@ -362,28 +362,13 @@ export const projects: Project[] = [
       "Client: Kogi State Ministry Of Health[cite: 1]."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Renovation And Rehabilitation Of The Burnt Ward At The General Hospital cover" }
+      { src: "images/projects/image22.jpg", alt: "Renovation And Rehabilitation Of The Burnt Ward At The General Hospital cover" }
     ]
   },
-  {
-    id: 23,
-    name: "Routine Service Of Peugeot 504 Station Wagon (FG 1%!& No. 2)",
-    slug: "routine-service-of-peugeot-504-station-wagon",
-    location: "Lagos State",
-    category: "Automotive Maintenance",
-    date: "Jun.1996",
-    client: "National Agricultural Land Development Authority (NALDA)",
-    description: [
-      "Routine Service Of Peugeot 504 Station Wagon in Lagos State[cite: 1].",
-      "Client: National Agricultural Land Development Authority (NALDA)[cite: 1]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Routine Service Of Peugeot 504 Station Wagon cover" }
-    ]
-  },
+  
   {
     id: 24,
-    name: "Contract For Supply, Installation And Commissioning Of 33KV/11KV Power To Aminu Kano Teaching Hospital, Kano",
+    name: "Contract For Supply, Installation And Commissioning Of 33KV/11KV Power Cable To Aminu Kano Teaching Hospital, Kano",
     slug: "contract-for-supply-installation-and-commissioning-of-33kv-11kv-power-to-aminu-kano-teaching-hospital",
     location: "Kano State",
     category: "Electrical Power",
@@ -399,7 +384,7 @@ export const projects: Project[] = [
   },
   {
     id: 25,
-    name: "Office Block For Alhaji Salisu Barau At Ibrahim Taiwo Road, Kano",
+    name: "Office Block For Alhaji Salisu Barau At Ibrahim Taiwo Road, Kano", //find
     slug: "office-block-for-alhajisalisu-barau-at-ibrahim-taiwo-road-kano",
     location: "Kano State",
     category: "Commercial Construction",
@@ -415,8 +400,8 @@ export const projects: Project[] = [
   },
   {
     id: 26,
-    name: "Construction of hotel block",
-    slug: "construction-of-hotel-block",
+    name: "Construction of Hostel block",
+    slug: "construction-of-hostel-block",
     location: "G.S.S Gawu-Abuja",
     category: "Building Construction",
     date: "Mar. 2012",
@@ -442,13 +427,13 @@ export const projects: Project[] = [
       "Client: Kogi State Universal Basic Education Board[cite: 1]."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Renovation of Class Room Block cover" }
+      { src: "images/projects/image27.jpg", alt: "Renovation of Class Room Block cover" }
     ]
   },
   {
     id: 28,
-    name: "Fencing of Bio-Resources Development Center",
-    slug: "fencing-of-bio-resources-development-center",
+    name: "Fencing of Biotech Development Center",
+    slug: "fencing-of-bio-tech-development-center",
     location: "Owode, Ogun State",
     category: "Construction",
     date: "July.2010",
@@ -511,14 +496,14 @@ export const projects: Project[] = [
   },
   {
     id: 32,
-    name: "General Renovation of Intermediate state Quarters",
-    slug: "general-renovation-of-intermediate-state-quarters",
+    name: "General Renovation of Intermediate Staff Quarters for Central Bank Of Nigeria",
+    slug: "general-renovation-of-intermediate-staff-quarters",
     location: "Abuja",
     category: "Renovation",
     date: "Aug. 2003",
     client: "Central Bank of Abuja (CBN)",
     description: [
-      "General Renovation of Intermediate state Quarters in Abuja[cite: 2].",
+      "General Renovation of Intermediate staff Quarters in Abuja[cite: 2].",
       "Client: Central Bank of Abuja (CBN)[cite: 2]."
     ],
     images: [
@@ -543,14 +528,14 @@ export const projects: Project[] = [
   },
   {
     id: 34,
-    name: "Construction of Generator House",
+    name: "Construction of Generator House Museum Office ",
     slug: "construction-of-generator-house",
-    location: "Abuja",
+    location: "Ibadan ,Oyo State",
     category: "Building Construction",
     date: "Jul.2001",
     client: "National Commission for Museums & Monuments",
     description: [
-      "Construction of Generator House in Abuja[cite: 2].",
+      "Construction of Generator House in Abuja.",
       "Client: National Commission for Museums & Monuments[cite: 2]."
     ],
     images: [
@@ -575,9 +560,9 @@ export const projects: Project[] = [
   },
   {
     id: 36,
-    name: "Guest Chalet at State Road Kano",
-    slug: "guest-chalet-at-state-road-kano",
-    location: "Kano",
+    name: "Guest Charlet For Asaka Cement",
+    slug: "guest-chralet-at-state-road-kano",
+    location: "Along state house road Kano",
     category: "Residential Construction",
     date: "Nov.1998",
     client: "Shehu Giwa & Partners",
@@ -592,7 +577,7 @@ export const projects: Project[] = [
   {
     id: 37,
     name: "Construction of 2 Bedroom Bungalows at The Lokongoma Phase III Lokoja",
-    slug: "construction-of-2-bedroom-bungalows-at-the-lokongoma-phase-iii-lokoja",
+    slug: "construction-of-2-bedroom-bungalows-at-the-lokongoma-phase-3-lokoja",
     location: "Lokoja",
     category: "Residential Construction",
     date: "Oct. 1998",
@@ -606,56 +591,24 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 38,
-    name: "Renovation & Rehabilitation of the Burnt Ward",
-    slug: "renovation-and-rehabilitation-of-the-burnt-ward",
-    location: "Lokoja General Hospital",
-    category: "Healthcare Renovation",
-    date: "Mar.1998",
-    client: "Kogi State Ministry of Health",
-    description: [
-      "Renovation & Rehabilitation of the Burnt Ward at Lokoja General Hospital[cite: 3].",
-      "Client: Kogi State Ministry of Health[cite: 3]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Renovation & Rehabilitation of the Burnt Ward cover" }
-    ]
-  },
-  {
     id: 39,
-    name: "Renovation & Upgrade of Primary Health Center (PHC)",
+    name: "Renovation & Upgrading of Primary Health Center (PHC) For Ministry Of Health Lokoja ",
     slug: "renovation-and-upgrade-of-primary-health-center-phc",
     location: "Abejokolo, Omala LGA Kogi State",
     category: "Healthcare Renovation",
     date: "Aug.1997",
     client: "Kogi State Ministry Health",
     description: [
-      "Renovation & Upgrade of Primary Health Center (PHC) in Abejokolo, Omala LGA Kogi State[cite: 3].",
-      "Client: Kogi State Ministry Health[cite: 3]."
+      "Renovation & Upgrade of Primary Health Center (PHC) in Abejokolo, Omala LGA Kogi State.",
+      "Client: Kogi State Ministry Health."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Renovation & Upgrade of Primary Health Center (PHC) cover" }
     ]
   },
   {
-    id: 40,
-    name: "Office Block for Alhaji Salisu Barau at Ibrahim Taiwo Road Kano",
-    slug: "office-block-for-alhajisalisu-barau-at-ibrahim-taiwo-road-kano",
-    location: "Kano",
-    category: "Commercial Construction",
-    date: "Jan. 1987",
-    client: "Environmental Development Consultants",
-    description: [
-      "Office Block for Alhaji Salisu Barau at Ibrahim Taiwo Road Kano[cite: 3].",
-      "Client: Environmental Development Consultants[cite: 3]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Office Block for Alhaji Salisu Barau at Ibrahim Taiwo Road Kano cover" }
-    ]
-  },
-  {
     id: 41,
-    name: "Large Lecture Theatre (Faculty of Science)",
+    name: "Electrical Installation For Large Lecture Theatre Hall (Faculty of Science) University Of Ilorin",
     slug: "large-lecture-theatre-faculty-of-science",
     location: "Iliorin",
     category: "Educational Building",
@@ -670,56 +623,56 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 42,
-    name: "Electrification of Icheke-Ajokpachi Community",
+    id: 99,
+    name: "Rural Electrification Work For Icheke-Ajokpachi Community",
     slug: "electrification-of-icheke-ajokpachi-community",
     location: "Omala L.G.A Kogi State",
     category: "Electrical Power",
     date: "Mar. 2012",
     client: "Kogi State Ministry of Rural Development",
     description: [
-      "Electrification of Icheke-Ajokpachi Community in Omala L.G.A Kogi State[cite: 3].",
-      "Client: Kogi State Ministry of Rural Development[cite: 3]."
+      "Electrification of Icheke-Ajokpachi Community in Omala L.G.A Kogi State.",
+      "Client: Kogi State Ministry of Rural Development."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Electrification of Icheke-Ajokpachi Community cover" }
+      { src: "images/projects/image42.jpg", alt: "Electrification of Icheke-Ajokpachi Community cover" }
     ]
   },
   {
-    id: 97,
-    name: "Construction & installation of Street Light Along Lokoja-Ganaja Road",
-    slug: "construction-and-installation-of-street-light-along-lokoja-ganaja-road",
+    id: 42,
+    name: "Construction & installation of Street Lights Along Lokoja-Ganaja Road",
+    slug: "construction-and-installation-of-street-lights-along-lokoja-ganaja-road",
     location: "Lokoja Kogi State",
     category: "Electrical & Lighting",
     date: "Dec.2011",
     client: "Zerock Construction Company Limited",
     description: [
-      "Construction & installation of Street Light Along Lokoja-Ganaja Road[cite: 3].",
-      "Client: Zerock Construction Company Limited[cite: 3]."
+      "Construction & installation of Street Lights Along Lokoja-Ganaja Road.",
+      "Client: Zerock Construction Company Limited"
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Construction & installation of Street Light Along Lokoja-Ganaja Road cover" }
+      { src: "images/projects/image42.jpg", alt: "Construction & installation of Street Light Along Lokoja-Ganaja Road cover" }
     ]
   },
   {
     id: 43,
-    name: "Rehabilitation of Street Light Lokoja Metropolis",
-    slug: "rehabilitation-of-street-light-lokoja-metropolis",
+    name: "Rehabilitation of Street Lights Lokoja Metropolis",
+    slug: "rehabilitation-of-street-lights-lokoja-metropolis",
     location: "Lokoja Township Kogi State",
     category: "Electrical & Lighting",
     date: "Nov.2011",
     client: "Kogi State Government Ministry of Woks",
     description: [
-      "Rehabilitation of Street Light Lokoja Metropolis[cite: 3].",
-      "Client: Kogi State Government Ministry of Works[cite: 3]."
+      "Rehabilitation of Street Light Lokoja Metropolis.",
+      "Client: Kogi State Government Ministry of Works."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Rehabilitation of Street Light Lokoja Metropolis cover" }
+      { src: "images/projects/image43.jpg", alt: "Rehabilitation of Street Light Lokoja Metropolis cover" }
     ]
   },
   {
     id: 44,
-    name: "Electrification of Ochaja Secondary School/Community",
+    name: "Electrification Supply to Ochaja Secondary School/Community",
     slug: "electrification-of-ochaja-secondary-school-community",
     location: "Dekina L.G.A Kogi State",
     category: "Electrical Power",
@@ -735,7 +688,7 @@ export const projects: Project[] = [
   },
   {
     id: 45,
-    name: "Electrification of icheke-Ate Community",
+    name: "Rural Electrification of Icheke-Ate Community",
     slug: "electrification-of-icheke-ate-community",
     location: "Omala L.G.A Kogi State",
     category: "Electrical Power",
@@ -751,15 +704,15 @@ export const projects: Project[] = [
   },
   {
     id: 46,
-    name: "Maintenance of 33kva Overhead Lines",
-    slug: "maintenance-of-33kva-overhead-lines",
-    location: "Katanpe Gwagwalada Abuja",
+    name: "Maintenance of 33kv Overhead Lines",
+    slug: "maintenance-of-33kv-overhead-lines",
+    location: "Katanpe to Gwagwalada Abuja",
     category: "Electrical Power",
     date: "Mar.2010",
     client: "Abuja Electricity Distribution Plc.",
     description: [
-      "Maintenance of 33kva Overhead Lines in Katanpe Gwagwalada Abuja[cite: 3].",
-      "Client: Abuja Electricity Distribution Plc[cite: 3]."
+      "Maintenance of 33kva Overhead Lines in Katanpe to Gwagwalada Abuja[cite: 3].",
+      "Client: Abuja Electricity Distribution Plc."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Maintenance of 33kva Overhead Lines cover" }
@@ -767,14 +720,14 @@ export const projects: Project[] = [
   },
   {
     id: 47,
-    name: "Solar Bases Rural",
+    name: "Solar Base Rural Installation",
     slug: "solar-bases-rural",
     location: "Sasaro & Egbegiri",
     category: "Energy",
     date: "Sept.2009",
     client: "Energy",
     description: [
-      "Solar Bases Rural deployment in Sasaro & Egbegiri[cite: 3].",
+      "Solar Bases Rural Installation in Sasaro & Egbegiri[cite: 3].",
       "Client: Energy sector[cite: 3]."
     ],
     images: [
@@ -783,31 +736,31 @@ export const projects: Project[] = [
   },
   {
     id: 48,
-    name: "Internal Electrification of Faculty of Law",
+    name: "Internal Electrification Installion for Faculty of Law",
     slug: "internal-electrification-of-faculty-of-law",
     location: "University of Ilorin Permanent Site Ilorin, Kwara State",
     category: "Electrical Power",
     date: "May.2009",
     client: "Works Development University, Ilorin",
     description: [
-      "Internal Electrification of Faculty of Law at University of Ilorin Permanent Site[cite: 4].",
-      "Client: Works Development University, Ilorin[cite: 4]."
+      "Internal Electrification of Faculty of Law at University of Ilorin Permanent Site.",
+      "Client: Works Development University, Ilorin."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Internal Electrification of Faculty of Law cover" }
+      { src: "images/projects/image48.jpg", alt: "Internal Electrification of Faculty of Law cover" }
     ]
   },
   {
     id: 49,
-    name: "Construction Of PHC Block",
+    name: "Construction Of Primary Healthcare (PHC) Block Ape Community",
     slug: "construction-of-phc-block",
     location: "Bunu District, Kogi State",
     category: "Healthcare Construction",
     date: "Oct.2009",
     client: "Kabba-Bunu Local Government",
     description: [
-      "Construction Of PHC Block in Bunu District, Kogi State[cite: 4].",
-      "Client: Kabba-Bunu Local Government[cite: 4]."
+      "Construction Of PHC Block in Bunu District, Kogi State.",
+      "Client: Kabba-Bunu Local Government."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Construction Of PHC Block cover" }
@@ -822,8 +775,8 @@ export const projects: Project[] = [
     date: "Mar.2009",
     client: "Zerock Construction Company Ltd",
     description: [
-      "Supply & Installation of 200kva Transformer at Deputy Governor's House, Makurdi, Benue State[cite: 4].",
-      "Client: Zerock Construction Company Ltd[cite: 4]."
+      "Supply & Installation of 200kva Transformer at Deputy Governor's House, Makurdi, Benue State.",
+      "Client: Zerock Construction Company Ltd."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Supply & Installation of 200kva Transformer cover" }
@@ -838,8 +791,8 @@ export const projects: Project[] = [
     date: "Dec.2008",
     client: "Kogi State Ministry of Works & Housing",
     description: [
-      "Relocation of High Tension (HT) Poles Along Lokoja Township Roads[cite: 4].",
-      "Client: Kogi State Ministry of Works & Housing[cite: 4]."
+      "Relocation of High Tension (HT) Poles Along Lokoja Township Roads.",
+      "Client: Kogi State Ministry of Works & Housing."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Relocation of High Tension (HT) Poles Along Lokoja Township Roads cover" }
@@ -854,8 +807,8 @@ export const projects: Project[] = [
     date: "Jul.2006",
     client: "Zerock Construction Company Ltd",
     description: [
-      "Construction & Installation of Street Light Along Obasanjo Square[cite: 4].",
-      "Client: Zerock Construction Company Ltd[cite: 4]."
+      "Construction & Installation of Street Light Along Obasanjo Square.",
+      "Client: Zerock Construction Company Ltd."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Construction & Installation of Street Light Along Obasanjo Square cover" }
@@ -870,8 +823,8 @@ export const projects: Project[] = [
     date: "Dec.2005",
     client: "Kogi State Ministry of Works & Housing",
     description: [
-      "Electrification of Permanent Secretary Residential Quarters along Ganaja Road Lokoja[cite: 4].",
-      "Client: Kogi State Ministry of Works & Housing[cite: 4]."
+      "Electrification of Permanent Secretary Residential Quarters along Ganaja Road Lokoja.",
+      "Client: Kogi State Ministry of Works & Housing."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Electrification of Permanent Secretary Residential Quarters cover" }
@@ -879,15 +832,15 @@ export const projects: Project[] = [
   },
   {
     id: 54,
-    name: "Construction & Installation of Street Light Along Stella Obasanjo Library/Government House/Kogi Hotel/Unity Square Road",
-    slug: "construction-and-installation-of-street-light-along-stella-obasanjo-library",
+    name: "Construction & Installation of Street Lights Along Stella Obasanjo Library/Government House/Kogi Hotel/Unity Square Road",
+    slug: "construction-and-installation-of-street-lights-along-stella-obasanjo-library",
     location: "Lokoja, Kogi State",
     category: "Electrical & Lighting",
     date: "Oct.2005",
     client: "Bulletin Construction Co. Ltd",
     description: [
-      "Construction & Installation of Street Light Along major city roads in Lokoja[cite: 4].",
-      "Client: Bulletin Construction Co. Ltd[cite: 4]."
+      "Construction & Installation of Street Lights Along major city roads in Lokoja.",
+      "Client: Bulletin Construction Co. Ltd."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Construction & Installation of Street Light Along Stella Obasanjo Library cover" }
@@ -895,15 +848,15 @@ export const projects: Project[] = [
   },
   {
     id: 55,
-    name: "Upgrade/Improvement of Fire Fighting System of Central",
-    slug: "upgrade-improvement-of-fire-fighting-system-of-central",
+    name: "Upgrade/Improvement of Fire Fighting System",
+    slug: "upgrade-improvement-of-fire-fighting-system",
     location: "Central Bank of Nigeria (CBN) Benin Branch",
     category: "Safety & Security",
     date: "Sept.2003",
     client: "Yaroson Partnership Ltd",
     description: [
-      "Upgrade/Improvement of Fire Fighting System of Central Bank of Nigeria (CBN) Benin Branch[cite: 4].",
-      "Client: Yaroson Partnership Ltd[cite: 4]."
+      "Upgrade/Improvement of Fire Fighting System of Central Bank of Nigeria (CBN) Benin Branch.",
+      "Client: Yaroson Partnership Ltd."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Upgrade/Improvement of Fire Fighting System of Central cover" }
@@ -918,11 +871,11 @@ export const projects: Project[] = [
     date: "Sept.2001",
     client: "University of Ilorin Teaching Hospital",
     description: [
-      "Supply & Installation of Air Conditioning Units at University Of Ilorin Teaching Hospital[cite: 5].",
-      "Client: University of Ilorin Teaching Hospital[cite: 5]."
+      "Supply & Installation of Air Conditioning Units at University Of Ilorin Teaching Hospital.",
+      "Client: University of Ilorin Teaching Hospital."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Supply & Installation of Air Conditioning Units cover" }
+      { src: "images/projects/image56.jpg", alt: "Supply & Installation of Air Conditioning Units cover" }
     ]
   },
   {
@@ -934,8 +887,8 @@ export const projects: Project[] = [
     date: "Apr.2001",
     client: "Rabo Engineers",
     description: [
-      "External Power Supply And Distribution At Bayero University, Kano State[cite: 5].",
-      "Client: Rabo Engineers[cite: 5]."
+      "External Power Supply And Distribution At Bayero University, Kano State.",
+      "Client: Rabo Engineers."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "External Power Supply And Distribution At Bayero University cover" }
@@ -943,15 +896,15 @@ export const projects: Project[] = [
   },
   {
     id: 58,
-    name: "Laying of Electricity Power Cable To Admin. Block",
+    name: "Laying of Electricity Power Cable To Admin Block",
     slug: "laying-of-electricity-power-cable-to-admin-block",
     location: "Aminu Kano Teaching Hospital Kano",
     category: "Electrical Power",
     date: "Sept.2000",
     client: "Aminu Kano Teaching Hospital Kano",
     description: [
-      "Laying of Electricity Power Cable To Admin. Block at Aminu Kano Teaching Hospital Kano[cite: 5].",
-      "Client: Aminu Kano Teaching Hospital Kano[cite: 5]."
+      "Laying of Electricity Power Cable To Admin. Block at Aminu Kano Teaching Hospital Kano.",
+      "Client: Aminu Kano Teaching Hospital Kano."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Laying of Electricity Power Cable To Admin. Block cover" }
@@ -959,15 +912,15 @@ export const projects: Project[] = [
   },
   {
     id: 59,
-    name: "Supply & Extension Of 200kva, 11kva Transformer To The Residence Of The Director Secretary's Dept. CBN Abuja",
-    slug: "supply-and-extension-of-200kva-11kva-transformer-to-cbn-residence",
+    name: "Supply & Extension Of 200kva, 11kv Transformer To The Residence Of The Director's Secretary CBN Abuja",
+    slug: "supply-and-extension-of-200kva-11kv-transformer-to-cbn-residence",
     location: "Abuja",
     category: "Electrical Power",
     date: "Feb.2000",
     client: "Central Bank Of Nigeria (CBN)",
     description: [
-      "Supply & Extension Of 200kva, 11kva Transformer to the residence of the Director Secretary's Dept. CBN Abuja[cite: 5].",
-      "Client: Central Bank Of Nigeria (CBN)[cite: 5]."
+      "Supply & Extension Of 200kva, 11kv Transformer to the residence of the Director's Secretary CBN Abuja.",
+      "Client: Central Bank Of Nigeria (CBN)."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Supply & Extension Of 200kva, 11kva Transformer cover" }
@@ -975,47 +928,32 @@ export const projects: Project[] = [
   },
   {
     id: 60,
-    name: "Power Supply To General Air-Conditioner in Phase 2 Theatre",
-    slug: "power-supply-to-general-air-conditioner-in-phase-2-theatre",
+    name: "Power Supply To The Theatre",
+    slug: "power-supply-to-theatre",
     location: "Aminu Kano Teaching Hospital Kano",
     category: "Electrical Power & HVAC",
     date: "Aug.2000",
     client: "Works Department Aminu Kano Teaching Hospital Kano",
     description: [
-      "Power Supply To General Air-Conditioner in Phase 2 Theatre at Aminu Kano Teaching Hospital[cite: 5].",
-      "Client: Works Department Aminu Kano Teaching Hospital Kano[cite: 5]."
+      "Power Supply the Theatre at Aminu Kano Teaching Hospital.",
+      "Client: Works Department Aminu Kano Teaching Hospital Kano."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Power Supply To General Air-Conditioner in Phase 2 Theatre cover" }
     ]
   },
-  {
-    id: 61,
-    name: "External Power Supply & Distribution At Bayero University Kano",
-    slug: "external-power-supply-and-distribution-at-bayero-university-kano",
-    location: "Kano",
-    category: "Electrical Power",
-    date: "Apr.2000",
-    client: "RABO Engineers",
-    description: [
-      "External Power Supply & Distribution At Bayero University Kano[cite: 5].",
-      "Client: RABO Engineers[cite: 5]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "External Power Supply & Distribution At Bayero University Kano cover" }
-    ]
-  },
+  
   {
     id: 62,
-    name: "External Electrification Of The Junior Staff Housing",
-    slug: "external-electrification-of-the-junior-staff-housing",
-    location: "Kano",
+    name: "External Electrification Supply to The Junior Staff Quarters",
+    slug: "external-electrification-of-the-junior-staff-Quarters",
+    location: "Aminu Kano Teaching Hospital Kano.",
     category: "Electrical Power",
     date: "Aug.2000",
     client: "Aminu Kano Teaching Hospital Kano",
     description: [
-      "External Electrification Of The Junior Staff Housing in Kano[cite: 5].",
-      "Client: Aminu Kano Teaching Hospital Kano[cite: 5]."
+      "External Electrification Of The Junior Staff Quarters in Kano.",
+      "Client: Aminu Kano Teaching Hospital Kano."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "External Electrification Of The Junior Staff Housing cover" }
@@ -1023,15 +961,15 @@ export const projects: Project[] = [
   },
   {
     id: 63,
-    name: "Electrical Installation & Sub-Station",
+    name: "Electrical Installation & Sub-Station for Asaka Cement Building",
     slug: "electrical-installation-and-sub-station",
-    location: "Ashaka Cement Building, Audu Bako Road Kano",
+    location: "Asaka Cement Building, Audu Bako Way Kano",
     category: "Electrical Installation",
     date: "Jul.2000",
     client: "Building Contracting Ltd, Bompia, Kano",
     description: [
-      "Electrical Installation & Sub-Station at Ashaka Cement Building, Audu Bako Road Kano[cite: 5].",
-      "Client: Building Contracting Ltd, Bompia, Kano[cite: 5]."
+      "Electrical Installation & Sub-Station at Asaka Cement Building, Audu Bako Road Kano.",
+      "Client: Building Contracting Ltd, Bompia, Kano."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Electrical Installation & Sub-Station cover" }
@@ -1046,8 +984,8 @@ export const projects: Project[] = [
     date: "May 1998",
     client: "Works",
     description: [
-      "Internal Electrification project at University of Ilorin[cite: 5].",
-      "Client: Works Department[cite: 5]."
+      "Internal Electrification project at University of Ilorin.",
+      "Client: Works Department."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Internal Electrification cover" }
@@ -1055,15 +993,15 @@ export const projects: Project[] = [
   },
   {
     id: 123,
-    name: "Of Small Lecture Theatre Hall",
-    slug: "of-small-lecture-theatre-hall",
+    name: "Electrical Installation for Small Lecture Theatre Hall",
+    slug: "Electrical Installation-small-lecture-theatre-hall",
     location: "Permanent Site Ilorin, Kwara State",
     category: "Building Construction",
     date: "May 1995",
     client: "Department University of Ilorin",
     description: [
-      "Construction work of Small Lecture Theatre Hall at Permanent Site Ilorin, Kwara State[cite: 6].",
-      "Client: Department University of Ilorin[cite: 6]."
+      "Electrical Installation for Small Lecture Theatre Hall at Permanent Site Ilorin, Kwara State.",
+      "Client: Department University of Ilorin."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Of Small Lecture Theatre Hall cover" }
@@ -1078,8 +1016,8 @@ export const projects: Project[] = [
     date: "May 1995",
     client: "Kano State Government",
     description: [
-      "Rural Electrification Of 2 Villages in Wudi L.G.A Kano State[cite: 6].",
-      "Client: Kano State Government[cite: 6]."
+      "Rural Electrification Of 2 Villages in Wudi L.G.A Kano State.",
+      "Client: Kano State Government."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Rural Electrification Of 2 Villages cover" }
@@ -1087,54 +1025,54 @@ export const projects: Project[] = [
   },
   {
     id: 66,
-    name: "Supply & Installation Of 3 Phase Meter Service Cable & Meter Board",
-    slug: "supply-and-installation-of-3-phase-meter-service-cable-and-meter-board",
+    name: "Supply & Installation Of 3 Phase Meter for First Bank ",
+    slug: "supply-and-installation-of-3-phase-meter",
     location: "Ikeja",
     category: "Electrical Installation",
     date: "Nov.1994",
     client: "First Bank",
     description: [
-      "Supply & Installation Of 3 Phase Meter Service Cable & Meter Board in Ikeja[cite: 6].",
-      "Client: First Bank[cite: 6]."
+      "Supply & Installation Of 3 Phase Meter for First Bank in Ikeja.",
+      "Client: First Bank."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Supply & Installation Of 3 Phase Meter Service Cable & Meter Board cover" }
+      { src: "https://via.placeholder.com/150", alt: "Supply & Installation Of 3 Phase Meter " }
     ]
   },
   {
     id: 67,
-    name: "Electrical Installation Service (Building)",
+    name: "Electrical/Mechanical Installation Of Block Of Flat ",
     slug: "electrical-installation-service-building",
-    location: "Kano",
+    location: "Wuse Zone 2, Abuja",
     category: "Electrical Installation",
     date: "Nov.1992",
     client: "Environmental Development Consultant",
     description: [
-      "Electrical Installation Service (Building) in Kano[cite: 6].",
-      "Client: Environmental Development Consultant[cite: 6]."
+      "Electrical Mechanical Installation Of Block Wuse, Abuja.",
+      "Client: Environmental Development Consultant."
     ],
     images: [
-      { src: "https://via.placeholder.com/150", alt: "Electrical Installation Service (Building) cover" }
+      { src: "images/projects/image89.jpg", alt: "Electrical Installation Service (Building) cover" }
     ]
   },
   {
     id: 68,
-    name: "NUC Block Of Flats Garki Abuja Electrical Installation",
+    name: "Electrical Installation for National University Commision (NUC) Block Of Flats ",
     slug: "nuc-block-of-flats-garki-abuja-electrical-installation",
-    location: "Abuja",
+    location: "Garki Area 10,Abuja",
     category: "Electrical Installation",
     date: "Jan.1992",
     client: "National Universities Commission",
     description: [
-      "NUC Block Of Flats Garki Abuja Electrical Installation[cite: 6].",
-      "Client: National Universities Commission[cite: 6]."
+      "NUC Block Of Flats Garki Abuja Electrical Installation.",
+      "Client: National Universities Commission."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "NUC Block Of Flats Garki Abuja Electrical Installation cover" }
     ]
   },
   {
-    id: 69,
+    id: 69, //edit
     name: "Electrical & Plumbing Works",
     slug: "electrical-and-plumbing-works",
     location: "Kano",
@@ -1142,8 +1080,8 @@ export const projects: Project[] = [
     date: "Jun.1991",
     client: "Environmental Development Consultant",
     description: [
-      "Electrical & Plumbing Works executed in Kano[cite: 6].",
-      "Client: Environmental Development Consultant[cite: 6]."
+      "Electrical & Plumbing Works executed in Kano.",
+      "Client: Environmental Development Consultant."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Electrical & Plumbing Works cover" }
@@ -1151,34 +1089,18 @@ export const projects: Project[] = [
   },
   {
     id: 70,
-    name: "Internal Electrical Installation Services",
+    name: "Internal Electrical Installation Services for Wards",
     slug: "internal-electrical-installation-services",
     location: "Aminu Kano Teaching Hospital, Kano",
     category: "Electrical Installation",
     date: "Jul.1991",
     client: "Special Presidential Task Force 1",
     description: [
-      "Internal Electrical Installation Services at Aminu Kano Teaching Hospital, Kano[cite: 6].",
-      "Client: Special Presidential Task Force 1[cite: 6]."
+      "Internal Electrical Installation Services at Aminu Kano Teaching Hospital, Kano.",
+      "Client: Special Presidential Task Force 1."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Internal Electrical Installation Services cover" }
-    ]
-  },
-  {
-    id: 71,
-    name: "Proposed Redevelopment Of The Site At 595 Club Road Kano",
-    slug: "proposed-redevelopment-of-the-site-at-595-club-road-kano",
-    location: "Kano",
-    category: "Redevelopment",
-    date: "Nov.1989",
-    client: "Kay-Tee Associates",
-    description: [
-      "Proposed Redevelopment Of The Site At 595 Club Road Kano[cite: 6].",
-      "Client: Kay-Tee Associates[cite: 6]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Proposed Redevelopment Of The Site At 595 Club Road Kano cover" }
     ]
   },
   {
@@ -1190,40 +1112,25 @@ export const projects: Project[] = [
     date: "Dec.2010",
     client: "Kogi State MDGs",
     description: [
-      "Drilling & Installation Of Hand Pump Borehole under MDGS-CGS Projects[cite: 6].",
-      "Client: Kogi State MDGs[cite: 6]."
+      "Drilling & Installation Of Hand Pump Borehole under MDGS-CGS Projects.",
+      "Client: Kogi State MDGs."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Drilling & Installation Of Hand Pump Borehole cover" }
     ]
   },
-  {
-    id: 73,
-    name: "2009 MDGs Quick Wins Project & Program",
-    slug: "2009-mdgs-quick-wins-project-and-program",
-    location: "Kogi State",
-    category: "Development Program",
-    date: "Mar.2010",
-    client: "State House Abuja",
-    description: [
-      "2009 MDGs Quick Wins Project & Program in Kogi State[cite: 6].",
-      "Client: State House Abuja[cite: 6]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "2009 MDGs Quick Wins Project & Program cover" }
-    ]
-  },
+ 
   {
     id: 74,
-    name: "Contract For Street Lighting Of Stella Obasanjo /Govt.",
-    slug: "contract-for-street-lighting-of-stella-obasanjo-govt",
+    name: "Contract For Street Lights from  Stella Obasanjo to Government House.",
+    slug: "contract-for-street-lights-of-stella-obasanjo-govt",
     location: "Lokoja, Kogi State",
     category: "Electrical & Lighting",
     date: "Oct.2005",
     client: "Bulletin Construction Company Nig.",
     description: [
-      "Contract For Street Lighting Of Stella Obasanjo /Govt in Lokoja, Kogi State[cite: 6].",
-      "Client: Bulletin Construction Company Nig[cite: 6]."
+      "Contract For Street Lights from  Stella Obasanjo to Government House in Lokoja, Kogi State.",
+      "Client: Bulletin Construction Company Nig."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Contract For Street Lighting Of Stella Obasanjo /Govt. cover" }
@@ -1231,47 +1138,31 @@ export const projects: Project[] = [
   },
   {
     id: 75,
-    name: "Installation Of New 250kva Perkin Generator, Servicing The Existing 165kva Perkin Generator, Mechanical & Electrical Work in The Water Works",
+    name: "Installation Of New 250kva Perkin Generator.",
     slug: "installation-of-new-250kva-perkin-generator-water-works",
     location: "Idah Water Works",
     category: "Mechanical & Electrical",
     date: "Sept.2003",
     client: "Kogi State Ministry Of Water Resources & Rural Development",
     description: [
-      "Installation Of New 250kva Perkin Generator, Servicing The Existing 165kva Perkin Generator, Mechanical & Electrical Work in The Water Works[cite: 7].",
-      "Client: Kogi State Ministry Of Water Resources & Rural Development[cite: 7]."
+      "Installation Of New 250kva Perkin Generator, Servicing The Existing 165kva Perkin Generator, Mechanical & Electrical Work in The Water Works.",
+      "Client: Kogi State Ministry Of Water Resources & Rural Development."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Installation Of New 250kva Perkin Generator cover" }
     ]
   },
   {
-    id: 76,
-    name: "Upgrade/Improvement Of Fire Fighting System In CBN Benin",
-    slug: "upgrade-improvement-of-fire-fighting-system-in-cbn-benin",
-    location: "Benin",
-    category: "Safety & Security",
-    date: "Sept.2003",
-    client: "Messrs.' Unecon Associates",
-    description: [
-      "Upgrade/Improvement Of Fire Fighting System In CBN Benin[cite: 7].",
-      "Client: Messrs.' Unecon Associates[cite: 7]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Upgrade/Improvement Of Fire Fighting System In CBN Benin cover" }
-    ]
-  },
-  {
     id: 77,
     name: "Refurbishing Of The 25kva Generator & Control Panel",
     slug: "refurbishing-of-the-25kva-generator-and-control-panel",
-    location: "Ekuku Waters Kogi State",
+    location: "Ekuku Waters Works Okene, Kogi State",
     category: "Mechanical & Electrical",
     date: "Aug.2003",
     client: "Kogi State Ministry Of Water Resources",
     description: [
-      "Refurbishing Of The 25kva Generator & Control Panel in Ekuku Waters Kogi State[cite: 7].",
-      "Client: Kogi State Ministry Of Water Resources[cite: 7]."
+      "Refurbishing Of The 25kva Generator & Control Panel in Ekuku Waters Works Okene, Kogi State.",
+      "Client: Kogi State Ministry Of Water Resources."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Refurbishing Of The 25kva Generator & Control Panel cover" }
@@ -1279,15 +1170,15 @@ export const projects: Project[] = [
   },
   {
     id: 78,
-    name: "General Renovation Of Intermediate Staff Quarters, Block D25, Flat 196, I&J Estate II.",
+    name: "Mechanical Installation Of Intermediate Staff Quarters for I&J Estate II.",
     slug: "general-renovation-of-intermediate-staff-quarters",
-    location: "Garki, Abuja",
-    category: "Renovation",
+    location: "Durumi, Abuja",
+    category: "Mechanical & Electrical",
     date: "Aug.2003",
     client: "Assistant Director Of Maintenance (Mech)",
     description: [
-      "General Renovation Of Intermediate Staff Quarters, Block D25, Flat 196, I&J Estate II in Garki, Abuja[cite: 7].",
-      "Client: Assistant Director Of Maintenance (Mech)[cite: 7]."
+      "General Renovation Of Intermediate Staff Quarters, Block D25, Flat 196, I&J Estate II in Garki, Abuja.",
+      "Client: Assistant Director Of Maintenance (Mech)."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "General Renovation Of Intermediate Staff Quarters cover" }
@@ -1302,104 +1193,24 @@ export const projects: Project[] = [
     date: "Aug.2003",
     client: "Kogi State Ministry Of Health",
     description: [
-      "Installation Of Generator Set At General Hospital in Idah, Kogi State[cite: 7].",
-      "Client: Kogi State Ministry Of Health[cite: 7]."
+      "Installation Of Generator Set At General Hospital in Idah, Kogi State.",
+      "Client: Kogi State Ministry Of Health."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Installation Of Generator Set At General Hospital cover" }
     ]
   },
   {
-    id: 80,
-    name: "Standby contractor For Outsourced Mechanical Engineering Work",
-    slug: "standby-contractor-for-outsourced-mechanical-engineering-work",
-    location: "Garki, Abuja",
-    category: "Mechanical Engineering",
-    date: "Apr.2003",
-    client: "CBN",
-    description: [
-      "Standby contractor For Outsourced Mechanical Engineering Work in Garki, Abuja[cite: 7].",
-      "Client: CBN[cite: 7]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Standby contractor For Outsourced Mechanical Engineering Work cover" }
-    ]
-  },
-  {
-    id: 81,
-    name: "Water Works",
-    slug: "water-works-idah",
-    location: "Idah",
-    category: "Water Engineering",
-    date: "Feb.2003",
-    client: "Ministry Of Water Resources & Rural Development",
-    description: [
-      "Water Works project in Idah[cite: 7].",
-      "Client: Ministry Of Water Resources & Rural Development[cite: 7]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Water Works cover" }
-    ]
-  },
-  {
-    id: 82,
-    name: "Construction Of Generator House",
-    slug: "construction-of-generator-house-garki-abuja",
-    location: "Garki, Abuja",
-    category: "Building Construction",
-    date: "Jul.2001",
-    client: "Notional Commission For Museums And Monuments",
-    description: [
-      "Construction Of Generator House in Garki, Abuja[cite: 7].",
-      "Client: Notional Commission For Museums And Monuments[cite: 7]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Construction Of Generator House cover" }
-    ]
-  },
-  {
-    id: 83,
-    name: "Supply & Sewing Of 54 Nos Complete NHIS Drivers Uniform",
-    slug: "supply-and-sewing-of-54-nos-complete-nhis-drivers-uniform",
-    location: "Abuja",
-    category: "Tailoring & Supply",
-    date: "Jun.2001",
-    client: "National Health Insurance Scheme",
-    description: [
-      "Supply & Sewing Of 54 Nos Complete NHIS Drivers Uniform in Abuja[cite: 8].",
-      "Client: National Health Insurance Scheme[cite: 8]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Supply & Sewing Of 54 Nos Complete NHIS Drivers Uniform cover" }
-    ]
-  },
-  {
-    id: 84,
-    name: "External Mechanical & Plumbing Services Installation At CBN Estate",
-    slug: "external-mechanical-and-plumbing-services-installation-at-cbn-estate",
-    location: "Central Bank Of Nigeria (CBN) Abuja",
-    category: "Mechanical & Plumbing",
-    date: "Jun.2001",
-    client: "Yaroson & Partners Consultant, Kaduna",
-    description: [
-      "External Mechanical & Plumbing Services Installation At CBN Estate, Abuja[cite: 8].",
-      "Client: Yaroson & Partners Consultant, Kaduna[cite: 8]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "External Mechanical & Plumbing Services Installation At CBN Estate cover" }
-    ]
-  },
-  {
     id: 85,
-    name: "Inter Connection Of Stand By generator Set Electricity Power Supply",
+    name: "Inter Connection Of StandBy generator Set/Electricity Power Supply",
     slug: "inter-connection-of-stand-by-generator-set-electricity-power-supply",
-    location: "Staff Housing Estate, Aminu Kano Teaching Hospital, Kano",
+    location: "Aminu Kano Teaching Hospital, Kano",
     category: "Electrical Power",
     date: "Jun.2001",
     client: "Works Department, Aminu Kano Teaching Hospital Kano",
     description: [
-      "Inter Connection Of Stand By generator Set Electricity Power Supply at Staff Housing Estate, Aminu Kano Teaching Hospital, Kano[cite: 8].",
-      "Client: Works Department, Aminu Kano Teaching Hospital Kano[cite: 8]."
+      "Inter Connection Of Stand By generator Set/ Electricity Power Supply at Staff Housing Estate, Aminu Kano Teaching Hospital, Kano.",
+      "Client: Works Department, Aminu Kano Teaching Hospital Kano."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Inter Connection Of Stand By generator Set cover" }
@@ -1407,15 +1218,15 @@ export const projects: Project[] = [
   },
   {
     id: 86,
-    name: "Water SUPPLY Connections To CBN I & Junior staff Housing Estate",
+    name: "External Water Supply Connections To I&J  staff Housing Estate CBN",
     slug: "water-supply-connections-to-cbn-i-and-junior-staff-housing-estate",
     location: "CBN Garki, Abuja",
     category: "Water Engineering",
     date: "Jun.1999",
     client: "Integrated Development Consultant Ltd Kaduna",
     description: [
-      "Water SUPPLY Connections To CBN I & Junior staff Housing Estate in CBN Garki, Abuja[cite: 8].",
-      "Client: Integrated Development Consultant Ltd Kaduna[cite: 8]."
+      "Water SUPPLY Connections To  I & J Housing Estate in CBN Garki, Abuja.",
+      "Client: Integrated Development Consultant Ltd Kaduna."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Water SUPPLY Connections To CBN I & Junior staff Housing Estate cover" }
@@ -1423,15 +1234,15 @@ export const projects: Project[] = [
   },
   {
     id: 87,
-    name: "Construction Of septic Tank & Soak Away Pits",
+    name: "Construction Of Septic Tank & Soak Away Pits for I&J Housing Estate",
     slug: "construction-of-septic-tank-and-soak-away-pits",
     location: "CBN Garki Abuja",
     category: "Civil Construction",
     date: "Jun.1999",
     client: "A.Awe Engineering Consultants, Ibadan",
     description: [
-      "Construction Of septic Tank & Soak Away Pits in CBN Garki Abuja[cite: 8].",
-      "Client: A.Awe Engineering Consultants, Ibadan[cite: 8]."
+      "Construction Of septic Tank & Soak Away Pits in CBN Garki Abuja.",
+      "Client: A.Awe Engineering Consultants, Ibadan."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Construction Of septic Tank & Soak Away Pits cover" }
@@ -1439,15 +1250,15 @@ export const projects: Project[] = [
   },
   {
     id: 88,
-    name: "Installation & Commissioning Of External Plumbing Services Equipment",
-    slug: "installation-and-commissioning-of-external-plumbing-services-equipment",
+    name: "Installation & Commissioning Of External Plumbing Equipment  I&J Housing Estate",
+    slug: "installation-and-commissioning-of-external-plumbing-equipment",
     location: "CBN Garki Abuja",
     category: "Plumbing Services",
     date: "Dec.1998",
     client: "Yeroson Partnership",
     description: [
-      "Installation & Commissioning Of External Plumbing Services Equipment in CBN Garki Abuja[cite: 8].",
-      "Client: Yeroson Partnership[cite: 8]."
+      "Installation & Commissioning Of External Plumbing Equipment in CBN Garki Abuja.",
+      "Client: Yeroson Partnership."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Installation & Commissioning Of External Plumbing Services Equipment cover" }
@@ -1455,34 +1266,19 @@ export const projects: Project[] = [
   },
   {
     id: 89,
-    name: "Mechanical Installation Sub Contractor In Respect Of Proposed Flat At Plots 1307 & 1308 Wuse II Abuja",
+    name: "Electrical/  Mechanical Installation for Block of Flat At Wuse II Abuja",
     slug: "mechanical-installation-sub-contractor-wuse-ii-abuja",
-    location: "Abuja",
+    location: "Wuse II Abuja",
     category: "Mechanical Installation",
     date: "Feb.1998",
     client: "Prime Consultants Ltd",
     description: [
-      "Mechanical Installation Sub Contractor In Respect Of Proposed Flat At Plots 1307 & 1308 Wuse II Abuja[cite: 8].",
-      "Client: Prime Consultants Ltd[cite: 8]."
+      "Mechanical Installation Sub Contractor In Respect Of Proposed Flat At Plots 1307 & 1308 Wuse II Abuja.",
+      "Client: Prime Consultants Ltd."
     ],
     images: [
       { src: "https://via.placeholder.com/150", alt: "Mechanical Installation Sub Contractor cover" }
     ]
   },
-  {
-    id: 90,
-    name: "Repairs & Services Of Office Equipment",
-    slug: "repairs-and-services-of-office-equipment",
-    location: "Abuja",
-    category: "Maintenance Services",
-    date: "Aug.1997",
-    client: "National Auto-Motive Council",
-    description: [
-      "Repairs & Services Of Office Equipment in Abuja[cite: 8].",
-      "Client: National Auto-Motive Council[cite: 8]."
-    ],
-    images: [
-      { src: "https://via.placeholder.com/150", alt: "Repairs & Services Of Office Equipment cover" }
-    ]
-  }
+  
 ];
