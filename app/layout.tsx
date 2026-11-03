@@ -19,7 +19,9 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: site.name,
     description: site.description,
-    images: [{ url: "/images/hero-construction.jpg", width: 1920, height: 1200, alt: "Tower crane over a building under construction" }],
+    images: [{ url: "/images/team/elessy-building.jpg", width: 1920, height: 1200, alt: "Elessy company building" },
+      { url: "/images/team/elessy-logo.png", width: 1920, height: 1200, alt: "Elessy company building" }
+    ],
   },
   twitter: { card: "summary_large_image" },
 };

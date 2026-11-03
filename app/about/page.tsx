@@ -42,12 +42,16 @@ export default function AboutPage() {
               <p>
                 ELESSY Nigeria Limited was registered with the{" "}
                 {company.regBody} as a limited liability company in{" "}
-                {company.founded} (Registration No. {company.regNo}). It began
-                with an associate team of experts with engineering and
+                {company.founded} (Registration No. {company.regNo}).We are an incorporated
+                indigenious construction company fully registered with the Corporate Affairs Commission of Nigeria.
+                We have an associate team of experts with engineering and
                 management backgrounds and has continued to grow in strength.
               </p>
 
               <p>
+                We have consistently grown and established ourselves as a highly oriented and
+                skilled engineering and construction firm. We give solutions and provide
+                experienced and professional based services to our clients.
                 Our experience spans building, electrical, mechanical and civil
                 engineering. The company was established to import, sell,
                 construct and install engineering devices.

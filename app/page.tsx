@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import { HeroSlideshow } from "@/components/sections/HeroSlideshow";
 import { ServiceIndex } from "@/components/sections/ServiceIndex";
 import { JobsCompleted } from "@/components/sections/JobsCompleted";

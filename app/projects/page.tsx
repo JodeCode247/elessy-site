@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { ProjectsGrid } from "@/components/sections/ProjectsGrid";
+import { OtherProjects } from "@/components/sections/OtherProjects";
 import { EnquiryBand } from "@/components/sections/EnquiryBand";
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ export default function ProjectsPage() {
     <>
       <PageHeader eyebrow="Projects" title="Work we have delivered across Nigeria." />
       <ProjectsGrid />
+      <OtherProjects />
       <EnquiryBand />
     </>
   );
