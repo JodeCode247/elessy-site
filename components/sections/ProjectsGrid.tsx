@@ -204,22 +204,9 @@ export function ProjectsGrid() {
         {totalPages > 1 && (
           <nav
             aria-label="Project pagination"
-            className="mt-12 flex flex-col gap-5 border-t border-neutral-200 pt-7 sm:mt-16 sm:flex-row sm:items-center sm:justify-between"
+            className="mt-12 flex justify-end border-t border-neutral-200 pt-7 sm:mt-16"
           >
-            <p className="text-sm text-neutral-600">
-              Showing{" "}
-              <span className="font-semibold text-neutral-950">
-                {startIndex + 1}–
-                {Math.min(startIndex + PROJECTS_PER_PAGE, projects.length)}
-              </span>{" "}
-              of{" "}
-              <span className="font-semibold text-neutral-950">
-                {projects.length}
-              </span>{" "}
-              projects
-            </p>
-
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-wrap items-center justify-end gap-2">
               <button
                 type="button"
                 aria-label="Previous page"
@@ -264,3 +251,16 @@ export function ProjectsGrid() {
     </section>
   );
 }
+
+{/* <p className="text-sm text-neutral-600">
+              Showing{" "}
+              <span className="font-semibold text-neutral-950">
+                {startIndex + 1}–
+                {Math.min(startIndex + PROJECTS_PER_PAGE, projects.length)}
+              </span>{" "}
+              of{" "}
+              <span className="font-semibold text-neutral-950">
+                {projects.length}
+              </span>{" "}
+              projects
+            </p> */}

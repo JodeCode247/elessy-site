@@ -40,9 +40,9 @@ export function OtherProjects() {
                   )}
                 >
                   <div className="flex min-w-0 items-start gap-5">
-                    <span className="pt-1 text-sm font-semibold text-brand/60">
+                    {/* <span className="pt-1 text-sm font-semibold text-brand/60">
                       {String(index + 1).padStart(2, "0")}
-                    </span>
+                    </span> */}
 
                     <div>
                       <h3 className="font-display text-lg font-bold text-ink transition-colors group-hover:text-brand md:text-xl">
