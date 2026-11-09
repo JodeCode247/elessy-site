@@ -13,7 +13,7 @@ export function OtherProjects() {
       <div className="container-page">
         <div className="mb-5 max-w-2xl">
           <h2 className="mt-3 font-display text-3xl font-bold text-ink md:text-4xl">
-            Other Projects
+            Other List of Projects
           </h2>
 
           <p className="mt-4 text-[16px] leading-relaxed text-steel">

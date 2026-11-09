@@ -843,4 +843,37 @@ export const otherProjects: Project[] = [
     { src: "https://via.placeholder.com/150", alt: "Construction Of septic Tank & Soak Away Pits cover" }
   ]
 },
+
+{
+  id: 89,
+  name: "Contract For Solid Waste Management Service With Lokoja Metropolis",
+  slug: "contract-for-solid-waste",
+  location: "Lokoja, Kogi State",
+  category: "Waste Management",
+  date: "Feb. 2023",
+  client: "Kogi State Government",
+  description: [
+    "Contract For Solid Waste Management Service With Lokoja Metropolis",
+    "Client: Kogi State Government"
+  ],
+  images: [
+    { src: "https://via.placeholder.com/150", alt: "Contract For Solid Waste Management Service With Lokoja Metropolis" }
+  ]
+},
+{
+  id: 91,
+  name: "Replacement And Installation of High Tension Cable and Radiator",
+  slug: "installation-high-tension-cable",
+  location: "Kano State",
+  category: "Waste Management",
+  date: "Apr. 1996",
+  client: "Bayero University Teaching Hospital ,Kano",
+  description: [
+    "Replacement And Installation of High Tension Cable and Radiator",
+    "Client: Bayero University Teaching Hospital ,Kano"
+  ],
+  images: [
+    { src: "https://via.placeholder.com/150", alt: "Contract For Solid Waste Management Service With Lokoja Metropolis" }
+  ]
+},
 ]

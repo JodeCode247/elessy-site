@@ -74,7 +74,7 @@ export function ProjectsGrid() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 md:pb-1">
+          {/* <div className="flex items-center gap-3 md:pb-1">
             <div className="flex h-12 w-12 items-center justify-center border border-neutral-200 bg-neutral-50">
               <ArrowDownRight
                 aria-hidden="true"
@@ -90,7 +90,7 @@ export function ProjectsGrid() {
                 Total projects
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <p className="sr-only" role="status" aria-live="polite">

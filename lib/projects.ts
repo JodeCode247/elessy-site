@@ -15,7 +15,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    name: "Clearing of Farm Land of Federal Ministry of Agriculture",
+    name: "Clearing of Farm Land for Federal Ministry of Agriculture",
     slug: "clearing-of-farm-land",
     location: "Toto, Nassarawa State",
     category: "General Services",
@@ -30,8 +30,9 @@ export const projects: Project[] = [
     ]
   },
   {
+
     id: 3,
-    name: "Contract for Plumbing Maintenance Service for Central Bank of Nigeria Governor's Residence",
+    name: "External Water Reticulation for Central Bank of Nigeria (CBN)",
     slug: "standby-plumbing-contractor-at-CBN-governors-residence",
     location: "Wuse, Abuja",
     category: "Plumbing & Maintenance",
@@ -159,14 +160,14 @@ export const projects: Project[] = [
   },
   {
     id: 25,
-    name: "Office Block For Alhaji Salisu Barawo At Ibrahim Taiwo Road, Kano",
-    slug: "office-block-for-alhajisalisu-Barawo-at-ibrahim-taiwo-road-kano",
+    name: "Office Complex For Alhaji Barau At Ibrahim Taiwo Road, Kano",
+    slug: "office-block-for-alhajisalisu-Barau-at-ibrahim-taiwo-road-kano",
     location: "Kano State",
     category: "Commercial Construction",
     date: "Nov.1986",
     client: "Environmental Development Consultants",
     description: [
-      "Office Block For Alhaji Salisu Barawo At Ibrahim Taiwo Road, Kano.",
+      "Office Block For Alhaji Salisu Barau At Ibrahim Taiwo Road, Kano.",
       "Client: Environmental Development Consultants."
     ],
     images: [
@@ -234,7 +235,7 @@ export const projects: Project[] = [
       "Client: Kogi State Ministry of Rural Development."
     ],
     images: [
-      { src: "images/projects/image43.jpg", alt: "Electrification of Icheke-Ajokpachi Community cover" }
+      { src: "images/projects/image62.jpg", alt: "Electrification of Icheke-Ajokpachi Community cover" }
     ]
   },
   {
@@ -338,18 +339,18 @@ export const projects: Project[] = [
   },
   {
     id: 66,
-    name: "Supply & Installation Of 3 Phase Meter for First Bank ",
-    slug: "supply-and-installation-of-3-phase-meter",
-    location: "Ikeja",
+    name: "Electrical Installation for  First Bank PLC Regional Headquater Kano",
+    slug: "supply-and-installationr",
+    location: "Kano",
     category: "Electrical Installation",
     date: "Nov.1994",
     client: "First Bank",
     description: [
-      "Supply & Installation Of 3 Phase Meter for First Bank in Ikeja.",
+      "Electrical Installation for  First Bank plc Regional Headquater Kano",
       "Client: First Bank."
     ],
     images: [
-      { src: "images/projects/image66.jpg", alt: "Supply & Installation Of 3 Phase Meter " }
+      { src: "images/projects/image66.jpg", alt: "Supply & Installation" }
     ]
   },
   {
